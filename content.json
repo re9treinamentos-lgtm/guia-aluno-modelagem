@@ -1,0 +1,3251 @@
+{
+ "versao": 1,
+ "config": {
+  "marca": {
+   "nome": "MODELAGEM",
+   "sub": "DE QUESTÕES FECHADAS",
+   "rotulo": "GUIA DO ALUNO",
+   "logo": "",
+   "tituloPagina": "Guia do Aluno · Modelagem de Questões"
+  },
+  "tema": {
+   "escuro": "#0b1022",
+   "destaque": "#f4b324",
+   "fundo": "#f6f4ee",
+   "cartao": "#ffffff",
+   "texto": "#171b2b",
+   "acerto": "#17905a",
+   "erro": "#cf3f30",
+   "fonteTitulo": "Oswald",
+   "fonteTexto": "Manrope",
+   "raio": 18,
+   "tituloMaiusculo": true
+  },
+  "home": {
+   "eyebrow": "Modelagem de questões fechadas · Guia do aluno",
+   "titulo": "Marque o X no lugar certo.",
+   "tituloDestaque": "Mesmo sem saber a matéria.",
+   "texto": "Assista cada aula na ordem, pause quando o professor pedir e pratique aqui mesmo. Cada aula tem roteiro, checklist e exercícios com correção na hora.",
+   "botao": "Começar o curso",
+   "secoes": {
+    "progresso": true,
+    "rotina": true,
+    "caminho": true
+   }
+  },
+  "menu": {
+   "quadro": true,
+   "exercicios": true,
+   "simulado": true,
+   "materiais": true
+  },
+  "acesso": {
+   "ativo": false,
+   "hash": "",
+   "titulo": "Entre com o seu código de acesso",
+   "texto": "Você recebeu o código de acesso junto com a compra do curso, na área de membros. Digite uma vez: neste aparelho ele fica salvo.",
+   "linkAjuda": "",
+   "modo": "aberto",
+   "tituloLogin": "Entre com o e-mail da compra",
+   "textoLogin": "Seu progresso fica salvo na sua conta e acompanha você em qualquer aparelho.",
+   "linkMembros": ""
+  },
+  "rodape": "Seu progresso fica salvo neste navegador.",
+  "nuvem": {
+   "apiKey": "",
+   "authDomain": "",
+   "projectId": "",
+   "appId": "",
+   "listaCompradores": false,
+   "google": true,
+   "admins": [],
+   "entrada": "convite",
+   "conviteHash": ""
+  }
+ },
+ "modulos": [
+  {
+   "id": "m1",
+   "n": "01",
+   "nome": "Introdução",
+   "sub": "O caminho do herói lendário e a proposta do curso.",
+   "icon": "flag"
+  },
+  {
+   "id": "m2",
+   "n": "02",
+   "nome": "Modelagem de Questões",
+   "sub": "Os padrões, o quadro de padrões e a aplicação em provas reais.",
+   "icon": "grid"
+  },
+  {
+   "id": "m3",
+   "n": "03",
+   "nome": "Balanceamento entre Alternativas",
+   "sub": "Como chutar com lógica quando o tempo acaba.",
+   "icon": "scale"
+  },
+  {
+   "id": "m4",
+   "n": "04",
+   "nome": "Modelagem Reversa",
+   "sub": "Estudar a partir da banca com o método M.A.P.A.",
+   "icon": "loop"
+  },
+  {
+   "id": "m5",
+   "n": "05",
+   "nome": "Bônus",
+   "sub": "Ebook Marque o X no lugar certo e coletânea de provas.",
+   "icon": "gift"
+  }
+ ],
+ "aulas": [
+  {
+   "id": "boas-vindas",
+   "mod": "m1",
+   "label": "Boas-vindas",
+   "titulo": "Boas-vindas: o caminho do herói lendário",
+   "obj": "Entender a proposta do curso: ganhar as questões que separam você da vaga, mesmo sem dominar a matéria.",
+   "dica": "A modelagem é um artifício, não um atalho para quem não estuda. Ela entra quando o conhecimento não alcança ou o tempo está acabando.",
+   "antes": [
+    "Tenha em mente o próximo concurso que você vai prestar e a nota de corte da última edição.",
+    "Separe um caderno ou arquivo para montar o seu quadro de padrões ao longo do curso."
+   ],
+   "passos": [
+    {
+     "t": "Conheça os três caminhos",
+     "d": [
+      "Léo, o camponês, fez 64% sem preparo e a nota de corte foi 74%.",
+      "Will, o guerreiro, estudou, fez 75% e ficou de fora por duas questões.",
+      "Alex, o herói lendário, passou com mais de 90%: quatro questões vieram da modelagem, cerca de 10% a mais no desempenho."
+     ]
+    },
+    {
+     "t": "Entenda o papel da modelagem",
+     "d": [
+      "Você precisa de várias estratégias: como estudar, como memorizar e como enfrentar a questão que você não sabe.",
+      "Ganhar duas ou três questões na dúvida pode ser a diferença entre ficar fora e ficar dentro das vagas."
+     ]
+    },
+    {
+     "t": "Defina a sua meta",
+     "d": [
+      "Concursos concorridos exigem índices de 85% a 90%.",
+      "Anote seu índice atual de acertos para medir a evolução ao longo do curso."
+     ]
+    }
+   ],
+   "check": [
+    "Sei a diferença entre o caminho do guerreiro e o do herói lendário.",
+    "Entendi que a modelagem complementa o estudo.",
+    "Anotei minha meta de índice de acertos."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Por que o Will “seguiu o caminho do guerreiro”?",
+     "o": [
+      "Não se preparou e decidiu fazer a prova de última hora.",
+      "Estudou bem, mas não tinha estratégia para as questões em que ficou em dúvida e perdeu a vaga por duas questões.",
+      "Foi aprovado com mais de 90% de acertos.",
+      "Chutou a mesma letra em todas as questões."
+     ],
+     "c": 1,
+     "e": "O guerreiro se prepara, mas não tem todas as armas. Com 75%, faltaram duas questões para Will ser aprovado — exatamente o tipo de ponto que a modelagem e o balanceamento ajudam a buscar.",
+     "tag": "Proposta do curso",
+     "id": "boas-vindas-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Qual frase descreve melhor a proposta da modelagem de questões?",
+     "o": [
+      "Substituir o estudo do edital por técnicas de prova.",
+      "Garantir aprovação em qualquer prova de alto nível só com padrões.",
+      "Ser uma estratégia extra para as questões em que você não sabe a matéria ou está sem tempo.",
+      "Servir apenas para provas de matemática."
+     ],
+     "c": 2,
+     "e": "O próprio professor deixa claro: você tem que estudar. A modelagem é a carta na manga para a questão que trava você.",
+     "tag": "Proposta do curso",
+     "id": "boas-vindas-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Em uma prova de 50 questões, você acerta 70%. Se a modelagem garantir mais 5 acertos, seu índice vai para:",
+     "o": [
+      "72%",
+      "75%",
+      "80%",
+      "90%"
+     ],
+     "c": 2,
+     "e": "5 questões em 50 equivalem a 10 pontos percentuais: de 70% para 80%. É o salto que, segundo o professor, torna você competitivo.",
+     "tag": "Proposta do curso",
+     "id": "boas-vindas-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "Início",
+   "downloads": []
+  },
+  {
+   "id": "a01",
+   "mod": "m2",
+   "grupo": "Fundamentos",
+   "label": "Aula 01",
+   "titulo": "O que é modelagem de questões",
+   "obj": "Entender o que é um padrão, de onde ele vem e quando a técnica deve entrar na prova.",
+   "dica": "Modelagem é identificar a alternativa que apresenta padrões que a diferenciam das demais. Ela funciona melhor quando a prova inteira foi feita pelo mesmo elaborador.",
+   "antes": [
+    "Pense na pergunta do professor: como trocar a água de um aquário cheio de piranhas sem tirar as piranhas? Repare que quase todo mundo responde do mesmo jeito.",
+    "Tenha papel para anotar a lista de padrões que ele apresenta no quadro."
+   ],
+   "passos": [
+    {
+     "t": "Entenda a base da técnica",
+     "d": [
+      "Pessoas no mesmo contexto tendem a resolver problemas da mesma forma.",
+      "O elaborador olha provas anteriores e o que a instituição cobra, e acaba replicando escolhas."
+     ]
+    },
+    {
+     "t": "Conheça a lista de padrões",
+     "d": [
+      "Tamanho, palavras restritivas, excludentes, termos negativos, poderá/deverá, tempos verbais, sentido e contexto, estrutura, estranheza, termos que mais se repetem, alternativas absurdas, textos genéricos, semelhança entre resultados e teste de alternativas.",
+      "Cada um ganha uma aula própria com questões reais."
+     ]
+    },
+    {
+     "t": "Saiba quando usar",
+     "d": [
+      "Primeiro resolva pelo conhecimento. Use a modelagem quando não souber a resposta, estiver em dúvida ou sem tempo.",
+      "Nem toda questão tem padrão. O objetivo é ganhar algumas a mais."
+     ]
+    }
+   ],
+   "check": [
+    "Sei explicar com minhas palavras o que é modelagem.",
+    "Conheço a lista de padrões.",
+    "Sei em que momento da prova aplicar a técnica."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "A modelagem de questões consiste em:",
+     "o": [
+      "Memorizar o gabarito das provas anteriores da banca.",
+      "Identificar a alternativa que apresenta padrões que a diferenciam das demais.",
+      "Ler apenas o enunciado e ignorar as alternativas.",
+      "Marcar sempre a alternativa mais longa."
+     ],
+     "c": 1,
+     "e": "Essa é a definição dada em aula. Em uma questão você encontra vários padrões nas alternativas, e apenas uma está fora deles.",
+     "tag": "Fundamentos",
+     "id": "a01-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Em que momento a modelagem deve entrar durante a prova?",
+     "o": [
+      "Antes de ler qualquer questão.",
+      "Em todas as questões, mesmo nas que você sabe.",
+      "Quando você não sabe a resposta pelo estudo, está em dúvida ou o tempo está acabando.",
+      "Somente nas questões de matemática."
+     ],
+     "c": 2,
+     "e": "A regra é tentar primeiro da maneira tradicional, com o seu conhecimento. A modelagem é o recurso para quando ele não alcança.",
+     "tag": "Fundamentos",
+     "id": "a01-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Uma questão tem 4 alternativas. Você elimina 2 por modelagem. Sua chance de acerto passa de:",
+     "o": [
+      "25% para 50%",
+      "20% para 40%",
+      "25% para 75%",
+      "50% para 100%"
+     ],
+     "c": 0,
+     "e": "Com 4 alternativas, um chute tem 25%. Restando 2, a chance sobe para 50%. Aumentar a probabilidade já é ganho.",
+     "tag": "Eliminação",
+     "id": "a01-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a02",
+   "mod": "m2",
+   "grupo": "Fundamentos",
+   "label": "Aula 02",
+   "titulo": "Desenhando o quadro de padrões",
+   "obj": "Montar o seu quadro de padrões para consultar nos estudos e reproduzir na prova.",
+   "dica": "Na prova, ache um espaço em branco e desenhe o quadro antes de modelar. Ele lembra você de procurar todos os padrões, e não só o primeiro que vier à cabeça.",
+   "antes": [
+    "Separe papel e caneta.",
+    "Abra a página Quadro de padrões deste guia para conferir o modelo."
+   ],
+   "passos": [
+    {
+     "t": "Desenhe duas colunas",
+     "d": [
+      "Coluna 1: o nome do padrão.",
+      "Coluna 2: a descrição ou o exemplo (ex.: palavra restritiva → “somente”; termo negativo → “não”)."
+     ]
+    },
+    {
+     "t": "Preencha com os padrões que você conhece",
+     "d": [
+      "Comece com os que já viu e complete a cada aula.",
+      "Use palavras curtas: na prova, o quadro precisa caber no canto da folha."
+     ]
+    },
+    {
+     "t": "Use o quadro em cada questão",
+     "d": [
+      "Leia as alternativas comparando com o quadro.",
+      "Uma questão pode ter mais de um padrão: marque todos que encontrar."
+     ]
+    }
+   ],
+   "check": [
+    "Meu quadro tem duas colunas: padrão e exemplo.",
+    "Consigo desenhar uma versão resumida em menos de 2 minutos.",
+    "Deixei o quadro impresso ou aberto ao lado para as próximas aulas."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Como é organizado o quadro de padrões proposto na aula?",
+     "o": [
+      "Uma lista de bancas e anos.",
+      "Duas colunas: o padrão e a sua descrição ou exemplo.",
+      "Uma tabela com a contagem de letras do gabarito.",
+      "Um mapa mental das matérias do edital."
+     ],
+     "c": 1,
+     "e": "Uma coluna para o padrão e outra para a descrição, com exemplos como “somente” (restritiva) e “não” (termo negativo).",
+     "tag": "Quadro de padrões",
+     "id": "a02-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Onde você desenha o quadro no dia da prova?",
+     "o": [
+      "No cartão de respostas.",
+      "Em um espaço em branco do caderno de prova.",
+      "Não se desenha: basta lembrar de cabeça.",
+      "No verso do documento de identidade."
+     ],
+     "c": 1,
+     "e": "O professor recomenda usar o espaço em branco da prova. O cartão de respostas nunca deve receber anotações.",
+     "tag": "Quadro de padrões",
+     "id": "a02-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a03",
+   "mod": "m2",
+   "grupo": "Fundamentos",
+   "label": "Aula 03",
+   "titulo": "Introdução à resolução de questões",
+   "obj": "Entender a dinâmica das aulas de exercícios: ver a banca, pausar, tentar com o quadro e só depois conferir a resolução.",
+   "dica": "Nas próximas aulas, o foco está nas alternativas, porque é nelas que os padrões aparecem. Na prova de verdade, leia o enunciado e tente resolver normalmente primeiro.",
+   "antes": [
+    "Tenha o quadro de padrões ao lado: na tela, impresso ou no caderno."
+   ],
+   "passos": [
+    {
+     "t": "Veja a banca, o cargo e o ano",
+     "d": [
+      "Cada questão é apresentada com a sua origem: isso mostra que a técnica funciona em bancas e cargos diferentes."
+     ]
+    },
+    {
+     "t": "Pause e tente sozinho",
+     "d": [
+      "Pause o vídeo, olhe as alternativas e procure os padrões do quadro.",
+      "Pode haver mais de um padrão na mesma questão."
+     ]
+    },
+    {
+     "t": "Confira a resolução",
+     "d": [
+      "Compare o padrão que você marcou com o que o professor aponta.",
+      "Avance para a próxima aula: cada aula traz um padrão."
+     ]
+    }
+   ],
+   "check": [
+    "Entendi que devo pausar e tentar antes da resolução.",
+    "Sei que o foco da modelagem está nas alternativas.",
+    "Sei que, na prova, o conhecimento vem primeiro."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Ao modelar uma questão, em que parte você concentra a busca pelos padrões?",
+     "o": [
+      "No cabeçalho da prova.",
+      "Nas alternativas.",
+      "No número da questão.",
+      "Na folha de redação."
+     ],
+     "c": 1,
+     "e": "“Nosso foco vai ser sempre nas alternativas, porque são nas alternativas que nós vamos encontrar os padrões.” O enunciado ajuda em alguns casos, como no padrão de contexto.",
+     "tag": "Fundamentos",
+     "id": "a03-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Qual é a ordem recomendada na prova?",
+     "o": [
+      "Modelar todas as questões e depois ler os enunciados.",
+      "Ler o enunciado, tentar resolver com o conhecimento e, se não souber, aplicar a modelagem.",
+      "Chutar primeiro e conferir depois.",
+      "Pular as questões difíceis sem voltar a elas."
+     ],
+     "c": 1,
+     "e": "A modelagem é um artifício para quando você não souber a matéria. A tentativa tradicional vem sempre antes.",
+     "tag": "Fundamentos",
+     "id": "a03-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a04",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "tamanho",
+   "label": "Aula 04",
+   "titulo": "Padrão: diferença de tamanho",
+   "obj": "Reconhecer a alternativa que foge do tamanho e da estrutura das demais.",
+   "dica": "Normas e leis são escritas com tópicos de tamanho parecido. Quando o examinador traz um trecho de outro ponto da norma ou acrescenta informação, o tamanho denuncia.",
+   "antes": [
+    "Pense em uma receita de bolo: os ingredientes aparecem em tópicos do mesmo tamanho. Um tópico diferente chama atenção."
+   ],
+   "passos": [
+    {
+     "t": "Entenda a lógica",
+     "d": [
+      "Artigos, incisos e alíneas seguem tamanho semelhante.",
+      "Para criar erro, o examinador junta trechos ou acrescenta informação: a alternativa fica maior ou menor."
+     ]
+    },
+    {
+     "t": "Acompanhe as quatro questões da aula",
+     "d": [
+      "FGV · TRT16 (2022): a A era a menor e trazia uma única sanção.",
+      "FGV · TJGO, juiz leigo (2022): a C era bem maior que as demais.",
+      "CBMMG · CHO (2022): “oitiva de testemunhas” fugia do tamanho e da ideia das medidas preliminares.",
+      "FGV · OAB (2024): a A era a menor; as erradas acrescentavam trechos com “mas não…”."
+     ]
+    },
+    {
+     "t": "Confira no material de base",
+     "d": [
+      "O professor abre o Código de Processo Penal Militar e a Constituição para mostrar como a estrutura original se repete."
+     ]
+    }
+   ],
+   "check": [
+    "Sei por que o tamanho diferente pode indicar a resposta.",
+    "Pausei e tentei as quatro questões da aula.",
+    "Anotei o padrão no meu quadro."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Por que a diferença de tamanho pode indicar a alternativa a ser marcada?",
+     "o": [
+      "Porque a banca sempre coloca a resposta na alternativa maior.",
+      "Porque o examinador junta trechos de outra parte da norma ou acrescenta informação, e o tamanho fica fora do padrão das demais.",
+      "Porque alternativas curtas são sempre erradas.",
+      "Porque o tamanho é sorteado pelo sistema da banca."
+     ],
+     "c": 1,
+     "e": "A alternativa diferente pode ser maior ou menor. O que importa é ela destoar das outras, porque veio de outro lugar ou recebeu informação extra.",
+     "tag": "Diferença de tamanho",
+     "id": "a04-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "Baseada na questão do CBMMG · CHO 2022 mostrada na aula",
+     "p": "Segundo o Código de Processo Penal Militar, todas as alternativas são medidas preliminares ao inquérito policial militar, EXCETO:",
+     "o": [
+      "A) Dirigir-se ao local, providenciando para que não se alterem o estado e a situação das coisas, enquanto necessário.",
+      "B) Apreender os instrumentos e todos os objetos que tenham relação com o fato.",
+      "C) Oitiva de testemunhas.",
+      "D) Colher todas as provas que sirvam para o esclarecimento do fato e suas circunstâncias."
+     ],
+     "c": 2,
+     "e": "As medidas preliminares são ações detalhadas e qualificadas, com estrutura parecida. “Oitiva de testemunhas” é curta e foge da ideia das outras — e o comando pede a exceção.",
+     "tag": "Diferença de tamanho",
+     "id": "a04-q2"
+    },
+    {
+     "t": "mc",
+     "fonte": "Treino no formato da aula",
+     "p": "Comando: assinale a alternativa correta. Sem saber a matéria, qual você marcaria pelo padrão de tamanho?",
+     "o": [
+      "A) A importação fica imune ao imposto de importação.",
+      "B) A comercialização no mercado interno é imune ao ICMS, mas não é imune a esse tributo estadual na comercialização dos respectivos aparelhos leitores.",
+      "C) Os aparelhos leitores, por terem outras funções, não podem ser alcançados pela imunidade, ainda que acompanhem os livros eletrônicos importados.",
+      "D) A importação dos livros é imune, mas a dos aparelhos leitores não é, devendo incidir o imposto de importação sobre estes."
+     ],
+     "c": 0,
+     "e": "Como na questão da OAB 2024 vista em aula, a correta é a mais curta. As erradas ganham trechos extras (“mas não…”, “não podem…”), que também trazem o padrão de termo negativo.",
+     "tag": "Diferença de tamanho",
+     "id": "a04-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a05",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "restritivas",
+   "label": "Aula 05",
+   "titulo": "Padrão: palavras restritivas",
+   "obj": "Identificar palavras que restringem demais a situação e tornam a alternativa errada.",
+   "dica": "Para copiar um texto no Word existem várias formas. Se a alternativa disser que só é possível “apenas com Ctrl+C”, restringiu demais.",
+   "antes": [
+    "Deixe em destaque no seu quadro: apenas, somente, exclusivamente, obrigatoriamente."
+   ],
+   "passos": [
+    {
+     "t": "Conheça as palavras",
+     "d": [
+      "Apenas, somente, exclusivamente, obrigatoriamente são as mais frequentes.",
+      "Também: estritamente, unicamente, exatamente, precisamente, singularmente, único."
+     ]
+    },
+    {
+     "t": "Acompanhe as questões",
+     "d": [
+      "Cebraspe · SEFAZ-DF (2020): licitação “apenas” para concessão → Errado.",
+      "Cebraspe · TCDF (2021): materialidade “exclusivamente quantitativa” → Errado.",
+      "IDECAN · TRF5 (2023): Spring “exclusivamente” para Android e “apenas” SOAP → falsas.",
+      "IBFC · EBSERH (2023): só a C não tinha restrição.",
+      "Cesgranrio · Transpetro (2023): restritivas e excludentes juntas."
+     ]
+    },
+    {
+     "t": "Lembre que é uma classificação didática",
+     "d": [
+      "“Palavra restritiva” não é uma classe gramatical: é um apelido para lembrar as palavras que limitam o texto."
+     ]
+    }
+   ],
+   "check": [
+    "Sei listar as quatro restritivas mais comuns.",
+    "Resolvi as questões da aula antes da correção.",
+    "Anotei no quadro com um exemplo."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Auditor Fiscal SEFAZ-DF · 2020 (item 38)",
+     "p": "Julgue o item.",
+     "b": "A prestação de serviços públicos de transporte coletivo sob o regime de permissão prescinde de licitação, que é exigida apenas para a modalidade de concessão.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. O “apenas” restringiu a licitação à concessão. Pelo art. 175 da CF/88, a prestação de serviços públicos sob concessão ou permissão é sempre precedida de licitação.",
+     "tag": "Palavras restritivas",
+     "id": "a05-q1"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Auditor de Controle Externo TCDF · 2021",
+     "p": "Considerando as normas internacionais das entidades fiscalizadoras superiores (ISSAI), julgue o item.",
+     "b": "Para conferir objetividade aos trabalhos de auditoria, a materialidade deve ser um critério exclusivamente quantitativo.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Pela ISSAI 100, a materialidade costuma ser vista em termos de valor, mas tem aspectos quantitativos e qualitativos. O “exclusivamente” restringiu demais.",
+     "tag": "Palavras restritivas",
+     "id": "a05-q2"
+    },
+    {
+     "t": "mc",
+     "fonte": "IBFC · Enfermeiro EBSERH · 2023 (interpretação de texto)",
+     "p": "Ao afirmar que a infelicidade é “fenômeno de relação”, o narrador sugere que a infelicidade é:",
+     "o": [
+      "A) percebida apenas pelos outros, sempre.",
+      "B) sempre causada pela ação do outro.",
+      "C) sentida ao comparar-se com os outros.",
+      "D) um fenômeno ilusório e inexplicável.",
+      "E) impossível de ser vista pelas outras pessoas."
+     ],
+     "c": 2,
+     "e": "A, B, D e E trazem restrições (“apenas”, “sempre”, “inexplicável”, “impossível”). A C é a única sem restrição e está de acordo com o texto.",
+     "tag": "Palavras restritivas",
+     "id": "a05-q3"
+    },
+    {
+     "t": "mc",
+     "p": "Qual destas palavras NÃO é uma palavra restritiva no sentido usado no curso?",
+     "o": [
+      "Somente",
+      "Exclusivamente",
+      "Obrigatoriamente",
+      "Qualquer"
+     ],
+     "c": 3,
+     "e": "“Qualquer” é o exemplo clássico de palavra excludente, que abre demais o leque. As restritivas fazem o contrário: fecham demais.",
+     "tag": "Palavras restritivas",
+     "id": "a05-q4"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a06",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "excludentes",
+   "label": "Aula 06",
+   "titulo": "Padrão: palavras excludentes",
+   "obj": "Reconhecer palavras que abrem demais o leque e apagam um caso específico.",
+   "dica": "Restritivas fecham demais; excludentes abrem demais. Se a regra vale para um cargo, uma profissão ou uma condição, “qualquer” e “todos” costumam torná-la errada.",
+   "antes": [
+    "Lembre do exemplo do IPM: será encarregado, sempre que possível, oficial não inferior a capitão. “Qualquer militar” estaria errado."
+   ],
+   "passos": [
+    {
+     "t": "Conheça as palavras",
+     "d": [
+      "As mais recorrentes: qualquer, todos/todas e tudo.",
+      "Também: sem, nenhum, ninguém, nada, algum, alguém."
+     ]
+    },
+    {
+     "t": "Acompanhe as questões",
+     "d": [
+      "Cebraspe · SEFAZ-DF (2020): inscrição em conselho para “qualquer” atividade → Errado.",
+      "FGV · OAB (2024): Monique, advogada presa em flagrante → a única sem padrão era a A.",
+      "FGV · OAB (2024): A com “unicamente”, C com “sem” e “qualquer”, D com “todos” → resposta B.",
+      "Consulplan · PMRN (2022): “todos os níveis sociais”, “linguagem universal”, “grande público”.",
+      "VUNESP · CREMESP: padrões em A, B e C; sobraram D e E (50%)."
+     ]
+    },
+    {
+     "t": "Combine com o padrão anterior",
+     "d": [
+      "Muitas questões trazem restritivas e excludentes juntas. Marque as duas no quadro."
+     ]
+    }
+   ],
+   "check": [
+    "Sei a diferença entre restritiva e excludente.",
+    "Conheço as três excludentes mais comuns.",
+    "Resolvi as questões da OAB antes da correção."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Auditor Fiscal SEFAZ-DF · 2020",
+     "p": "Julgue o item.",
+     "b": "A Constituição Federal de 1988 prevê expressamente a exigência de inscrição em conselho de fiscalização para o exercício de qualquer atividade profissional.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. A regra é a liberdade profissional (art. 5º, XIII). Só algumas profissões exigem inscrição — o jornalismo, por exemplo, nem exige diploma. O “qualquer” abriu demais o leque.",
+     "tag": "Palavras excludentes",
+     "id": "a06-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "FGV · Exame da OAB · 2024",
+     "p": "Monique, advogada regularmente inscrita na OAB, foi presa em flagrante em seu escritório por suposto crime ligado ao exercício da advocacia. Segundo o Estatuto da Advocacia, é correto afirmar que:",
+     "o": [
+      "A) Monique tem direito à presença de representante da OAB na lavratura do auto de prisão em flagrante, por se tratar de crime ligado ao exercício da advocacia, sob pena de nulidade.",
+      "B) Não há qualquer direito ou prerrogativa conferida pela legislação no caso, devendo Monique receber tratamento idêntico ao de quem não é advogado.",
+      "C) A presença de representante da OAB será devida ainda que não se trate de motivo ligado à advocacia, pois é direito do advogado em todo e qualquer crime.",
+      "D) O representante da OAB pode ser substituído por representante da Defensoria Pública, visto que ambos podem figurar como defensores."
+     ],
+     "c": 0,
+     "e": "B traz “qualquer”, C traz “todo e qualquer” e D abre o leque com “ambos”. A A não tem padrão e reflete o art. 7º, IV, do Estatuto: presença de representante da OAB quando preso em flagrante por motivo ligado ao exercício da advocacia.",
+     "tag": "Palavras excludentes",
+     "id": "a06-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Em uma questão de 5 alternativas, você encontra padrões em A, B e C e fica entre D e E. O que aconteceu com sua chance de acerto?",
+     "o": [
+      "Continuou em 20%.",
+      "Subiu de 20% para 50%.",
+      "Subiu de 20% para 100%.",
+      "Caiu, porque sobrou dúvida."
+     ],
+     "c": 1,
+     "e": "Foi o que aconteceu na questão do CREMESP: a modelagem não fechou a resposta, mas eliminou três alternativas. A chance passou de 1 em 5 para 1 em 2.",
+     "tag": "Eliminação",
+     "id": "a06-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a07",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "negativos",
+   "label": "Aula 07",
+   "titulo": "Padrão: termos negativos",
+   "obj": "Perceber como a negação transforma uma afirmação correta em errada.",
+   "dica": "Atenção redobrada quando o comando pede a INCORRETA ou quando você julga itens no Certo/Errado: o “não” tende a aparecer justamente onde está o erro.",
+   "antes": [
+    "Treine com frases simples: “o delegado pode prender” → “o delegado não pode prender”."
+   ],
+   "passos": [
+    {
+     "t": "Entenda a lógica",
+     "d": [
+      "Para errar uma frase verdadeira, basta negá-la: “um mais um não são dois”.",
+      "Muito usado no Certo/Errado e nas questões de “assinale a incorreta”."
+     ]
+    },
+    {
+     "t": "Acompanhe as questões",
+     "d": [
+      "Cebraspe · SEFAZ-DF (2020): tarifa que “não pode ser alterada unilateralmente” → Errado.",
+      "Cebraspe · TJCE, juiz (2018): A, B e C com “não”, D com “pode”; resposta E.",
+      "Cebraspe · AGU (2015): o Estado “não deverá figurar no polo passivo” → Errado.",
+      "IMAM · médico angiologista: quatro questões de “é incorreto afirmar” resolvidas pelo “não”."
+     ]
+    },
+    {
+     "t": "Grife o comando",
+     "d": [
+      "Antes de procurar o “não”, confirme se a questão pede correta, incorreta ou exceto."
+     ]
+    }
+   ],
+   "check": [
+    "Entendi por que o “não” é usado para criar erro.",
+    "Sei em que tipo de comando ele é mais frequente.",
+    "Resolvi as questões da prova de médico antes da correção."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Auditor Fiscal SEFAZ-DF · 2020 (item 30)",
+     "p": "Acerca da concessão de serviços públicos, julgue o item.",
+     "b": "Concessão de serviço público é contrato administrativo pelo qual a administração delega a terceiro a execução de um serviço público, por sua conta e risco, assegurada a remuneração mediante tarifa paga pelo usuário, fixada pelo preço da proposta vencedora da licitação, a qual não pode ser alterada unilateralmente pelo poder público ou pela concessionária.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Pela Lei 8.987/95 e pela teoria das cláusulas exorbitantes, a tarifa pode ser alterada unilateralmente pela administração. O “não” tornou a assertiva errada.",
+     "tag": "Termos negativos",
+     "id": "a07-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "IMAM · Médico angiologista · 2012 (questão 31)",
+     "p": "Em relação às próteses e enxertos vasculares, é INCORRETO afirmar que:",
+     "o": [
+      "A) O uso da veia safena autóloga como substituto arterial do segmento femoropoplíteo data de 1949.",
+      "B) A prótese sintética de PTFE expandido foi desenvolvida em 1969 e implantada pela primeira vez em humanos em 1972.",
+      "C) A veia safena autóloga é considerada o melhor substituto vascular para artérias de pequeno e médio calibre, mas tem oclusão tardia de 25% a 40% em 5 anos.",
+      "D) Até 50% dos pacientes que necessitam de reconstrução vascular podem não ter veia safena autóloga disponível."
+     ],
+     "c": 3,
+     "e": "O comando pede a incorreta, e a única com termo negativo é a D. Gabarito oficial: D.",
+     "tag": "Termos negativos",
+     "id": "a07-q2"
+    },
+    {
+     "t": "mc",
+     "p": "O comando diz “é incorreto afirmar que”. Onde o termo negativo tende a aparecer?",
+     "o": [
+      "Na alternativa a ser marcada.",
+      "Em todas as alternativas.",
+      "Somente no enunciado.",
+      "Nunca aparece nesse tipo de comando."
+     ],
+     "c": 0,
+     "e": "Para criar a alternativa errada — a que você deve marcar — o examinador costuma negar uma afirmação verdadeira.",
+     "tag": "Termos negativos",
+     "id": "a07-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a08",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "poderdever",
+   "label": "Aula 08",
+   "titulo": "Padrão: poderá e deverá",
+   "obj": "Detectar a troca entre possibilidade (poderá) e obrigação (deverá).",
+   "dica": "Onde a lei dá uma opção, o examinador escreve “deverá”. Onde ela impõe uma obrigação, ele escreve “poderá”. Os derivados pode, deve e poderia contam.",
+   "antes": [
+    "Revise o padrão de termos negativos: nesta aula eles aparecem combinados com poderá e deverá."
+   ],
+   "passos": [
+    {
+     "t": "Entenda o trocadilho",
+     "d": [
+      "Poderá = condição, possibilidade.",
+      "Deverá = obrigatoriedade."
+     ]
+    },
+    {
+     "t": "Acompanhe as questões",
+     "d": [
+      "Cebraspe · TJCE, juiz (2018): todas com pode/deve, exceto a A → resposta A.",
+      "FGV · juiz leigo (2022): todas com poderá/deverá; a A era a única sem outros padrões somados (qualquer, não, os dois sócios)."
+     ]
+    },
+    {
+     "t": "Some com outros padrões",
+     "d": [
+      "Quando todas as alternativas têm poderá/deverá, procure a que tem menos padrões acumulados."
+     ]
+    }
+   ],
+   "check": [
+    "Sei a diferença de sentido entre poderá e deverá.",
+    "Sei usar o critério de “menos padrões” quando todas têm o mesmo.",
+    "Anotei os derivados (pode, deve, poderia)."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Advogado da União AGU · 2015",
+     "p": "Julgue o item referente a agentes públicos.",
+     "b": "Se, em uma operação da Polícia Federal, um agente público for preso em flagrante por recebimento de propina e houver ajuizamento de ação penal, um eventual processo administrativo disciplinar deverá ser sobrestado até o trânsito em julgado do processo criminal.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. As instâncias são independentes: o PAD não precisa ser paralisado por causa da ação penal. O “deverá” criou uma obrigação inexistente.",
+     "tag": "Poderá e deverá",
+     "id": "a08-q1"
+    },
+    {
+     "t": "mc",
+     "p": "“Qualquer pessoa deve prender quem for pego em flagrante cometendo um crime.” Qual é o problema dessa frase?",
+     "o": [
+      "Nenhum: ela está correta.",
+      "Qualquer pessoa pode prender; quem deve são as autoridades. Houve troca de poder por dever.",
+      "Ninguém pode prender em flagrante.",
+      "Só juízes podem prender em flagrante."
+     ],
+     "c": 1,
+     "e": "É o exemplo da aula de excludentes que mostra também o trocadilho com poderá/deverá: qualquer do povo pode; as autoridades policiais têm o dever.",
+     "tag": "Poderá e deverá",
+     "id": "a08-q2"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Técnico em Segurança de Barragens ANM · 2021",
+     "p": "Com relação às redes de fluxo usadas para estimar fluxo e pressões em problemas de percolação, julgue o item.",
+     "b": "O número de canais de fluxo deve corresponder a um número inteiro.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. O número de canais de fluxo não precisa ser inteiro. Mesmo sem conhecer hidráulica, o “deve” acende a luz.",
+     "tag": "Poderá e deverá",
+     "id": "a08-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a09",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "tempos",
+   "label": "Aula 09",
+   "titulo": "Padrão: tempos verbais ou classes de palavras diferentes",
+   "obj": "Encontrar a alternativa cujo tempo verbal ou classe de palavra não combina com as demais.",
+   "dica": "Teste uma expressão antes de cada alternativa. Na questão da aula, “processo de…” encaixa em todas, menos em uma.",
+   "antes": [
+    "Relembre: infinitivo (fazer), gerúndio (fazendo), substantivo (realização), adjetivo (realizado)."
+   ],
+   "passos": [
+    {
+     "t": "Entenda o padrão",
+     "d": [
+      "Várias alternativas descrevem um processo em andamento e uma descreve algo que já ocorreu.",
+      "Ou todas são substantivos e uma é adjetivo."
+     ]
+    },
+    {
+     "t": "Faça o teste da aula",
+     "d": [
+      "FGV · CBMAM, tenente (2021): coloque “processo de” antes de cada alternativa.",
+      "Aproveitamento, readaptação, reversão, agregação encaixam. “Excedente” não."
+     ]
+    }
+   ],
+   "check": [
+    "Sei aplicar o teste da expressão antes das alternativas.",
+    "Identifiquei a alternativa fora do tempo na questão da aula."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Baseada na questão da FGV · CBMAM · 2021",
+     "p": "Coloque “processo de” antes de cada alternativa. Qual delas está em um tempo diferente das demais?",
+     "o": [
+      "Aproveitamento",
+      "Readaptação",
+      "Excedente",
+      "Reversão",
+      "Agregação"
+     ],
+     "c": 2,
+     "e": "“Processo de aproveitamento/readaptação/reversão/agregação” indica algo ocorrendo. “Processo de excedente” não soa natural: quem está excedente já está. Na prova, essa era a alternativa a marcar.",
+     "tag": "Tempos verbais / classes",
+     "id": "a09-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Quatro alternativas começam com verbos no infinitivo (realizar, executar, registrar, avaliar) e uma começa com “executando”. Pela modelagem:",
+     "o": [
+      "Descartar a do gerúndio, porque é a mais curta.",
+      "Dar atenção especial à do gerúndio, porque está em forma diferente das demais.",
+      "Ignorar o padrão, porque verbos não importam.",
+      "Marcar a primeira alternativa."
+     ],
+     "c": 1,
+     "e": "O padrão é a forma diferente. A alternativa que destoa do grupo merece atenção, e o comando da questão diz se ela é a que você deve marcar.",
+     "tag": "Tempos verbais / classes",
+     "id": "a09-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a10",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "contexto",
+   "label": "Aula 10",
+   "titulo": "Padrão: diferença de sentido e contexto",
+   "obj": "Achar o que une a maioria das alternativas e a que está fora desse contexto.",
+   "dica": "Antes de olhar as alternativas uma a uma, pergunte: o que quatro delas têm em comum? A resposta costuma estar na que não tem.",
+   "antes": [
+    "Revise o conceito de clareza conceitual: conhecer bem o significado das palavras ajuda neste padrão."
+   ],
+   "passos": [
+    {
+     "t": "Entenda o padrão",
+     "d": [
+      "Todas falam de mecanismo de acidente (atropelamento, queda) e uma fala de comportamento (agressivo): esta está fora.",
+      "Todos os verbos indicam uso próprio e um indica uso por terceiros."
+     ]
+    },
+    {
+     "t": "Acompanhe as questões",
+     "d": [
+      "ENEM 2022: todos têm pátria, menos o apátrida.",
+      "CBMMG · CHO (2022): incorporar, receber, utilizar (uso próprio) × permitir (uso por terceiros)."
+     ]
+    }
+   ],
+   "check": [
+    "Sei procurar o sentido comum às alternativas.",
+    "Resolvi as duas questões da aula antes da correção."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Baseada na questão do ENEM 2022",
+     "p": "Quatro alternativas descrevem pessoas que têm uma pátria. Qual está fora desse contexto?",
+     "o": [
+      "Exilado",
+      "Apátrida",
+      "Foragido",
+      "Refugiado",
+      "Clandestino"
+     ],
+     "c": 1,
+     "e": "Exilado, foragido, refugiado e clandestino têm pátria, mesmo fora dela. O apátrida é quem não tem pátria — era a resposta da questão.",
+     "tag": "Sentido e contexto",
+     "id": "a10-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "Baseada na questão do CBMMG · CHO 2022 (improbidade)",
+     "p": "Os verbos que abrem as alternativas são: incorporar, receber, utilizar e permitir. Qual tem sentido diferente?",
+     "o": [
+      "Incorporar",
+      "Receber",
+      "Utilizar",
+      "Permitir"
+     ],
+     "c": 3,
+     "e": "Incorporar, receber e utilizar indicam uso próprio. Permitir indica que outra pessoa usa — está fora do contexto e era a alternativa a marcar.",
+     "tag": "Sentido e contexto",
+     "id": "a10-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a11",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "estrutura",
+   "label": "Aula 11",
+   "titulo": "Padrão: diferença de estrutura",
+   "obj": "Perceber a alternativa cuja forma de escrita quebra a lógica das demais.",
+   "dica": "Manuais e normas seguem uma estrutura. Um trecho trazido de outro lugar quebra essa estrutura: uma barra, um “ou”, duas palavras onde as outras têm uma.",
+   "antes": [
+    "Ao ler as alternativas, observe a forma (pontuação, número de palavras, conectivos) antes do conteúdo."
+   ],
+   "passos": [
+    {
+     "t": "Entenda a lógica",
+     "d": [
+      "As alternativas tiradas da mesma norma têm a mesma estrutura.",
+      "A que veio de outra fonte, ou foi alterada para ficar errada, destoa na forma."
+     ]
+    },
+    {
+     "t": "Acompanhe as questões",
+     "d": [
+      "PMMG · quadro de saúde (2017): todas “palavra + preposição + palavra”, a C com barra → exceto, resposta C.",
+      "Cebraspe · DPE/AL (2017): a C com duas palavras, as demais com uma."
+     ]
+    }
+   ],
+   "check": [
+    "Sei observar a forma das alternativas, não só o conteúdo.",
+    "Anotei exemplos de quebra de estrutura no quadro."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Treino no formato da aula",
+     "p": "Comando: assinale a EXCEÇÃO. Pela estrutura, qual alternativa você marcaria?",
+     "o": [
+      "A) Dor torácica",
+      "B) Dispneia de esforço",
+      "C) Palpitação / síncope",
+      "D) Edema de membros"
+     ],
+     "c": 2,
+     "e": "Todas seguem “termo + complemento”, e a C quebra a estrutura com uma barra. Foi exatamente o padrão da questão da PMMG mostrada em aula.",
+     "tag": "Diferença de estrutura",
+     "id": "a11-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Quatro alternativas têm uma única palavra e uma tem duas palavras ligadas por “e”. O que isso sugere?",
+     "o": [
+      "Que a de duas palavras está fora do padrão e merece atenção.",
+      "Que a banca errou a formatação.",
+      "Que todas estão corretas.",
+      "Nada: estrutura não é padrão."
+     ],
+     "c": 0,
+     "e": "Foi o caso da prova de defensor público da DPE/AL: a C, com duas palavras, era a resposta.",
+     "tag": "Diferença de estrutura",
+     "id": "a11-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a12",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "estranheza",
+   "label": "Aula 12",
+   "titulo": "Padrão: incômodo ou estranheza",
+   "obj": "Confiar no incômodo que uma alternativa mal escrita ou absurda causa, principalmente quando se pede a incorreta.",
+   "dica": "Este padrão funciona melhor para quem estudou: você sente que “isso nunca apareceu nos meus estudos”. Use esse sinal.",
+   "antes": [
+    "Lembre: normas internas não podem contrariar uma norma maior, como o Código de Trânsito."
+   ],
+   "passos": [
+    {
+     "t": "Entenda o padrão",
+     "d": [
+      "Às vezes a alternativa está tão errada que até a escrita fica estranha.",
+      "Esse estranhamento é um sinal, sobretudo em questões que pedem a incorreta."
+     ]
+    },
+    {
+     "t": "Acompanhe a questão",
+     "d": [
+      "CBMMG · CHO (2022), manual de frota: a C dizia que “poderá ser inobservada a condição de habilitação” do substituto.",
+      "Nenhuma norma de condução de veículos poderia dispensar a habilitação exigida pelo CTB."
+     ]
+    }
+   ],
+   "check": [
+    "Sei para que perfil de candidato o padrão funciona melhor.",
+    "Reconheço a redação estranha da questão da aula."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Baseada na questão do CBMMG · CHO 2022 (manual de frota)",
+     "p": "Comando: assinale a INCORRETA. Uma alternativa diz: “Em caso extraordinário, a condução por outro motorista será admitida em caso de vitimação do motorista credenciado, momento em que poderá ser inobservada a condição de habilitação do eventual substituto.” Qual trecho causa a estranheza?",
+     "o": [
+      "“Em caso extraordinário”",
+      "“outro motorista será admitida”",
+      "“poderá ser inobservada a condição de habilitação”",
+      "“motorista credenciado”"
+     ],
+     "c": 2,
+     "e": "Dispensar a habilitação fere o Código de Trânsito, e a construção “poderá ser inobservada” é estranha para uma norma. Era a alternativa incorreta.",
+     "tag": "Estranheza",
+     "id": "a12-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Para quem o padrão de estranheza costuma funcionar melhor?",
+     "o": [
+      "Para quem nunca estudou a matéria.",
+      "Para quem estudou, está em dúvida e percebe que aquela afirmação nunca apareceu nos estudos.",
+      "Somente para questões de cálculo.",
+      "Para quem chuta a mesma letra."
+     ],
+     "c": 1,
+     "e": "O incômodo vem da comparação com o que você estudou. Por isso o professor destaca esse padrão para o candidato preparado que ficou confuso.",
+     "tag": "Estranheza",
+     "id": "a12-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a13",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "repeticao",
+   "label": "Aula 13",
+   "titulo": "Padrão: combinação dos termos que mais se repetem",
+   "obj": "Aplicar a contagem por posição para encontrar a alternativa que junta os termos mais repetidos.",
+   "dica": "Para confundir quem sabe a resposta, o examinador repete partes da resposta certa nas erradas. Conte por posição e junte os campeões.",
+   "antes": [
+    "Tenha lápis à mão: você vai contar termos na primeira, segunda e terceira posição."
+   ],
+   "passos": [
+    {
+     "t": "Conte por posição",
+     "d": [
+      "Separe cada alternativa em partes (1ª, 2ª, 3ª posição).",
+      "Em cada posição, ache o termo que mais aparece."
+     ]
+    },
+    {
+     "t": "Junte os mais repetidos",
+     "d": [
+      "A alternativa que combina os termos campeões é a candidata.",
+      "Em empate, use outro padrão ou uma pista do enunciado (ex.: grupo OH → álcool)."
+     ]
+    },
+    {
+     "t": "Acompanhe as questões",
+     "d": [
+      "FGV · TRT16 (2022): uma hora / nenhum intervalo / 15 minutos → B.",
+      "ALECE (2021): intermediário + institucional → C.",
+      "Soja e milho → B.",
+      "FGV · CBMAM: álcool + cetona → A; e até frações: numerador 1, denominador 3 → D."
+     ]
+    }
+   ],
+   "check": [
+    "Sei contar termos por posição.",
+    "Sei desempatar com outro padrão ou com o enunciado.",
+    "Resolvi as questões da aula antes da correção."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Treino no formato da questão da FGV · TRT16 · 2022",
+     "p": "Sem ler o enunciado, qual alternativa junta os termos que mais se repetem em cada posição?",
+     "o": [
+      "A) uma hora · duas horas · 15 minutos",
+      "B) uma hora · nenhum intervalo · 15 minutos",
+      "C) uma hora · nenhum intervalo · 30 minutos",
+      "D) duas horas · nenhum intervalo · 15 minutos"
+     ],
+     "c": 1,
+     "e": "1ª posição: “uma hora” (3×). 2ª: “nenhum intervalo” (3×). 3ª: “15 minutos” (3×). A B junta os três campeões — a mesma lógica da questão resolvida em aula.",
+     "tag": "Termos que mais se repetem",
+     "id": "a13-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "Treino no formato da aula",
+     "p": "Qual alternativa junta os termos que mais se repetem?",
+     "o": [
+      "A) soja e trigo",
+      "B) soja e milho",
+      "C) arroz e milho",
+      "D) soja e algodão",
+      "E) café e milho"
+     ],
+     "c": 1,
+     "e": "Na 1ª posição, “soja” aparece 3 vezes; na 2ª, “milho” aparece 3 vezes. A B junta os dois.",
+     "tag": "Termos que mais se repetem",
+     "id": "a13-q2"
+    },
+    {
+     "t": "mc",
+     "fonte": "FGV · Investigador PCMG · 2024 (questão 31)",
+     "p": "Considerando os entendimentos doutrinário e jurisprudencial dominantes, a Polícia Civil do Estado de Minas Gerais é:",
+     "o": [
+      "A) órgão público integrante da administração pública direta, fruto da desconcentração administrativa.",
+      "B) órgão público integrante da administração pública direta, fruto da descentralização administrativa.",
+      "C) autarquia integrante da administração pública indireta, fruto da desconcentração administrativa.",
+      "D) órgão público integrante da administração pública indireta, fruto da desconcentração administrativa.",
+      "E) autarquia integrante da administração pública indireta, fruto da descentralização administrativa."
+     ],
+     "c": 0,
+     "e": "Pelo contexto, a Polícia Civil é órgão público da administração direta. Na segunda parte, “desconcentração” é o termo que mais se repete. A A junta os dois — gabarito oficial A.",
+     "tag": "Termos que mais se repetem",
+     "id": "a13-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a14",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "absurdas",
+   "label": "Aula 14",
+   "titulo": "Padrão: eliminação de alternativas absurdas",
+   "obj": "Eliminar o que não tem relação com o enunciado para aumentar a chance de acerto.",
+   "dica": "Este padrão exige ler o enunciado. Desenhe a situação, se ajudar: no exemplo da aula, o professor desenha a pirâmide da organização.",
+   "antes": [
+    "Lembre: eliminar já é ganhar. Mesmo sem fechar a resposta, você aumenta sua probabilidade."
+   ],
+   "passos": [
+    {
+     "t": "Leia o que o enunciado pede",
+     "d": [
+      "Destaque a palavra-chave da situação (ex.: decisões concentradas nos níveis superiores)."
+     ]
+    },
+    {
+     "t": "Risque as absurdas",
+     "d": [
+      "Alternativas que contradizem a palavra-chave saem primeiro.",
+      "Decida entre as que sobraram, combinando com outros padrões ou com o balanceamento."
+     ]
+    }
+   ],
+   "check": [
+    "Sei identificar a palavra-chave do enunciado.",
+    "Eliminei as absurdas na questão da aula antes da correção."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Técnico Legislativo ALECE · 2021",
+     "p": "Uma organização com elevada concentração da tomada de decisão nos níveis organizacionais superiores é conhecida como:",
+     "o": [
+      "A) verticalizada",
+      "B) horizontalizada",
+      "C) achatada",
+      "D) centralizada",
+      "E) descentralizada"
+     ],
+     "c": 3,
+     "e": "Horizontalizada, achatada e descentralizada contradizem a concentração no topo: são absurdas. Entre A e D, a palavra-chave “concentração da decisão” aponta para centralizada.",
+     "tag": "Alternativas absurdas",
+     "id": "a14-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Em uma questão com 5 alternativas, você elimina 3 absurdas. Sua chance ao escolher entre as restantes é:",
+     "o": [
+      "20%",
+      "33%",
+      "50%",
+      "60%"
+     ],
+     "c": 2,
+     "e": "Restam 2 alternativas: 1 em 2, ou seja, 50%. Antes da eliminação era 20%.",
+     "tag": "Alternativas absurdas",
+     "id": "a14-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a15",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "genericos",
+   "label": "Aula 15",
+   "titulo": "Padrão: textos mais genéricos e menos restritivos",
+   "obj": "Escolher a alternativa mais aberta quando o comando pede a correta.",
+   "dica": "Este padrão é o espelho das restritivas: se três alternativas fecham demais (“deverá obrigatoriamente”), a mais aberta tende a ser a correta.",
+   "antes": [
+    "Grife o comando: correta, incorreta ou exceto? Este padrão vale para a correta."
+   ],
+   "passos": [
+    {
+     "t": "Compare o grau de restrição",
+     "d": [
+      "CBMMG · CHO (2023), continência: B “deverá ser”, C e D “deverá obrigatoriamente”, A aberta → resposta A."
+     ]
+    },
+    {
+     "t": "Use junto com as restritivas",
+     "d": [
+      "Quando a maioria tem apenas, somente, toda, deverá, sobra a menos restritiva."
+     ]
+    }
+   ],
+   "check": [
+    "Sei que o padrão vale para comandos que pedem a correta.",
+    "Sei comparar o grau de restrição entre alternativas."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Cesgranrio · Engenheiro Químico Transpetro · 2023",
+     "p": "Considerando a solubilidade do cromo (concentração analítica de 0,010 mol/L), conclui-se que o cromo estará:",
+     "o": [
+      "A) quantitativamente precipitado em toda a faixa de pH alcalino.",
+      "B) precipitado apenas em meio muito ácido.",
+      "C) solúvel na medida em que se desloca para os extremos da faixa de pH.",
+      "D) solúvel somente na medida em que o pH se torna mais elevado.",
+      "E) precipitado em toda a faixa de pH."
+     ],
+     "c": 2,
+     "e": "A e E abrem demais (“toda a faixa”); B e D restringem (“apenas”, “somente”). A C é a única sem padrão, a menos restritiva — e é o gabarito.",
+     "tag": "Menos restritiva",
+     "id": "a15-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "Baseada na questão do CBMMG · CHO 2023",
+     "p": "Comando: assinale a correta. Três alternativas usam “deverá ser” ou “deverá obrigatoriamente”; uma diz apenas que a continência é a saudação que o militar deve aos símbolos, às autoridades, à tropa formada e a outros militares. Qual marcar?",
+     "o": [
+      "Uma das que têm “deverá obrigatoriamente”.",
+      "A alternativa aberta, sem as restrições.",
+      "Nenhuma: deixar em branco.",
+      "A mais longa entre as restritivas."
+     ],
+     "c": 1,
+     "e": "As outras três restringiam demais a situação. A menos restritiva era a A, a resposta da questão.",
+     "tag": "Menos restritiva",
+     "id": "a15-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a16",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "semelhanca",
+   "label": "Aula 16",
+   "titulo": "Padrão: semelhança entre os resultados",
+   "obj": "Usar a proximidade entre valores para chegar perto da resposta de uma questão de cálculo.",
+   "dica": "Quem elabora a questão já sabe a resposta e cria vizinhos parecidos para confundir. Procure o grupo de valores próximos e, entre eles, o que repete o padrão.",
+   "antes": [
+    "Lembre: na prova, tente o cálculo primeiro. O padrão entra quando você não consegue desenvolver a conta."
+   ],
+   "passos": [
+    {
+     "t": "Ache os valores parecidos",
+     "d": [
+      "FGV · MPSC (2022): 33,5 e 33,1 eram os mais próximos; “,5” repetido várias vezes → D.",
+      "2,1 e 2,5 próximos, “,1” repetido → B."
+     ]
+    },
+    {
+     "t": "Use o valor médio",
+     "d": [
+      "FGV · CBMAM: entre 2,7 e 7,2, o 7,2 estava mais perto da média dos resultados → C.",
+      "Na prova da PCMG, o professor marcou o valor médio entre as alternativas (teorema do limite central)."
+     ]
+    }
+   ],
+   "check": [
+    "Sei agrupar os resultados semelhantes.",
+    "Sei usar o valor médio para desempatar."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Treino no formato da aula",
+     "p": "Sem fazer a conta, onde provavelmente está a resposta?",
+     "o": [
+      "A) 1,5",
+      "B) 2,1",
+      "C) 2,5",
+      "D) 3,1",
+      "E) 4,8"
+     ],
+     "c": 1,
+     "e": "2,1 e 2,5 são os mais próximos, e o final “,1” se repete (2,1 e 3,1) para confundir. Foi o raciocínio da aula para chegar à B.",
+     "tag": "Semelhança entre resultados",
+     "id": "a16-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Por que o examinador coloca resultados parecidos nas alternativas?",
+     "o": [
+      "Para facilitar a vida do candidato.",
+      "Porque já sabe a resposta e cria vizinhos dela para selecionar só os mais preparados.",
+      "Por erro de digitação.",
+      "Para que a resposta seja sempre o maior valor."
+     ],
+     "c": 1,
+     "e": "A semelhança é proposital. Por isso a resposta costuma estar no grupo de valores próximos.",
+     "tag": "Semelhança entre resultados",
+     "id": "a16-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a17",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "label": "Aula 17",
+   "titulo": "Combinação de padrões",
+   "obj": "Reconhecer mais de um padrão na mesma questão e escolher a alternativa com menos padrões.",
+   "dica": "O examinador mistura padrões: restritiva com negativo, poderá com somente. Marque todos e fique com a alternativa menos carregada.",
+   "antes": [
+    "Revise o quadro de padrões completo antes de assistir."
+   ],
+   "passos": [
+    {
+     "t": "Marque todos os padrões",
+     "d": [
+      "FGV · TRT16 (2022): A com “não” e “poderá”; B e C com “somente” e “poderia/poderá”; D com “não”.",
+      "A E, com menos padrões e menos restritiva, era a resposta."
+     ]
+    },
+    {
+     "t": "Lembre o recado final",
+     "d": [
+      "A modelagem é um artifício. Pratique em simulados até ficar proficiente."
+     ]
+    }
+   ],
+   "check": [
+    "Sei marcar mais de um padrão por alternativa.",
+    "Sei escolher a alternativa com menos padrões."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Técnico ANM · 2021 (item 22)",
+     "p": "Julgue o item.",
+     "b": "A avaliação especial de desempenho não constitui requisito para que o servidor público alcance a estabilidade, uma vez que ela se aplica unicamente aos servidores em estágio probatório.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Combinação de termo negativo (“não constitui”) com restritiva (“unicamente”). Pela CF/88, a avaliação especial de desempenho é condição obrigatória para a estabilidade.",
+     "tag": "Combinação de padrões",
+     "id": "a17-q1"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Advogado da União AGU · 2015 (item 63)",
+     "p": "Julgue o item sobre despesa pública.",
+     "b": "Em regra, todos os empenhos podem ser anulados, excepcionando-se dessa regra apenas o empenho feito em caráter global.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Excludente (“todos”) e restritiva (“apenas”) juntas. A regra é oposta: empenhos geram obrigação de pagamento e só são nulos quando desrespeitam a lei.",
+     "tag": "Combinação de padrões",
+     "id": "a17-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a18",
+   "mod": "m2",
+   "grupo": "Os padrões",
+   "pat": "teste",
+   "label": "Aula 18",
+   "titulo": "Questões envolvendo cálculo: teste de alternativas",
+   "obj": "Resolver questões de cálculo substituindo as alternativas, com a professora Patrícia Marinho.",
+   "dica": "Nunca comece pelo maior nem pelo menor valor. Teste o intermediário: se o resultado passar do esperado, desça; se faltar, suba.",
+   "antes": [
+    "Tenha papel para refazer as contas junto com a professora."
+   ],
+   "passos": [
+    {
+     "t": "Monte o caminho do problema",
+     "d": [
+      "Leia o enunciado e anote as operações na ordem em que acontecem."
+     ]
+    },
+    {
+     "t": "Teste o valor do meio",
+     "d": [
+      "MP/GO (2019): testar 8 deu 2.612 (passou). Testar 7 deu 2.012 (exato).",
+      "FGV · Osasco: testar 2.500 km fechou com os 600 km do terceiro dia."
+     ]
+    }
+   ],
+   "check": [
+    "Sei por que começar pelo valor intermediário.",
+    "Refiz os dois testes da aula sozinho."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Auxiliar Administrativo MP/GO · 2019",
+     "p": "Miguel pensou em um número positivo, multiplicou-o por ele mesmo e, com o resultado, fez sucessivamente: somou 1, multiplicou por 10, somou 3 e multiplicou por 4, obtendo 2.012. Em que número Miguel pensou?",
+     "o": [
+      "5",
+      "7",
+      "8",
+      "9",
+      "11"
+     ],
+     "c": 1,
+     "e": "Teste o meio (8): 64 → 65 → 650 → 653 → 2.612. Passou, então desça. Com 7: 49 → 50 → 500 → 503 → 2.012. Resposta: 7.",
+     "tag": "Teste de alternativas",
+     "id": "a18-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "FGV · Prefeitura de Osasco",
+     "p": "Hélio percorreu 40% da distância total no 1º dia, 60% da distância restante no 2º dia e 600 km no 3º dia, chegando ao destino. A distância total foi de:",
+     "o": [
+      "1.500 km",
+      "2.000 km",
+      "2.500 km",
+      "3.000 km",
+      "3.500 km"
+     ],
+     "c": 2,
+     "e": "Teste 2.500: 1º dia = 1.000 km; restam 1.500; 2º dia = 60% de 1.500 = 900; total 1.900; faltam 600 km. Fecha com o enunciado.",
+     "tag": "Teste de alternativas",
+     "id": "a18-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Ao testar o valor intermediário, o resultado ficou ACIMA do que o enunciado pede. Qual é o próximo passo?",
+     "o": [
+      "Testar o maior valor.",
+      "Testar um valor abaixo do que você acabou de testar.",
+      "Desistir da questão.",
+      "Marcar o valor testado mesmo assim."
+     ],
+     "c": 1,
+     "e": "Se passou do esperado, o número certo é menor. Foi o que a professora fez ao trocar o 8 pelo 7.",
+     "tag": "Teste de alternativas",
+     "id": "a18-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "a19",
+   "mod": "m2",
+   "grupo": "Na prática",
+   "label": "Aula 19",
+   "titulo": "Modelagem de questões na prática",
+   "obj": "Modelar uma prova inteira e ver quantas questões a técnica entrega.",
+   "dica": "Quando a prova é do mesmo elaborador, os padrões se repetem de uma questão para outra. Nesta prova do TJCE, foram 4 questões ganhas.",
+   "antes": [
+    "Pegue o quadro de padrões e prepare-se para pausar a cada questão."
+   ],
+   "passos": [
+    {
+     "t": "Questão 6",
+     "d": [
+      "B com “deve” e “não pode”, D com “deverá”, E com “poderá”. A sem padrão → A."
+     ]
+    },
+    {
+     "t": "Questão 7",
+     "d": [
+      "Termos repetidos: “universalidade de direito” e “legal” → C."
+     ]
+    },
+    {
+     "t": "Questões 15 e 19",
+     "d": [
+      "15: A, B e C com “não”, D com “pode… a qualquer tempo” → E.",
+      "19: sobraram A e E (50%); gabarito A."
+     ]
+    }
+   ],
+   "check": [
+    "Tentei as quatro questões antes da correção.",
+    "Percebi a repetição dos padrões na mesma prova."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Cebraspe · Juiz Substituto TJCE · 2018 (questão 15)",
+     "p": "Com base no Código de Processo Civil, é correto afirmar que o valor da causa:",
+     "o": [
+      "A) não servirá de base de cálculo para fixação de multa por ato atentatório à dignidade da justiça, caso seja irrisório ou demasiado elevado.",
+      "B) é requisito legal da petição inicial, mas não da reconvenção.",
+      "C) não poderá ser corrigido de ofício pelo juiz, mesmo se verificado que não corresponde ao conteúdo patrimonial em discussão.",
+      "D) pode ser corrigido a qualquer tempo, se comprovada alteração superveniente de fato ou de direito, oportunidade em que será complementado o seu pagamento.",
+      "E) corresponderá, em causa relativa a obrigação por tempo indeterminado, à soma das prestações vencidas mais o valor de uma prestação anual relativa às vincendas."
+     ],
+     "c": 4,
+     "e": "A, B e C trazem “não” (e C ainda “poderá”); D traz “pode” e “a qualquer tempo”. A E é a única sem padrão. Gabarito oficial: E.",
+     "tag": "Prova na prática",
+     "id": "a19-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Por que a modelagem rende mais quando você aplica em uma prova inteira do mesmo elaborador?",
+     "o": [
+      "Porque o elaborador tende a repetir as mesmas formas de construir alternativas erradas.",
+      "Porque a prova fica mais fácil no final.",
+      "Porque as respostas seguem um desenho no gabarito.",
+      "Porque todas as questões têm o mesmo gabarito."
+     ],
+     "c": 0,
+     "e": "O mesmo elaborador repete escolhas. Por isso o professor diz que a prova inteira serve para modelar as questões. E desenhos no gabarito não funcionam: isso é mito.",
+     "tag": "Prova na prática",
+     "id": "a19-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "ce1",
+   "mod": "m2",
+   "grupo": "Certo e Errado",
+   "label": "C/E · Aula 1",
+   "titulo": "Certo e Errado: quando usar a modelagem",
+   "obj": "Saber quando vale arriscar no Certo/Errado e quais padrões aparecem mais nesse formato.",
+   "dica": "No Certo/Errado, acertar soma, errar desconta e deixar em branco vale zero. A modelagem ajuda principalmente a identificar as assertivas ERRADAS.",
+   "antes": [
+    "Assista antes às aulas dos padrões. Se começou por aqui, volte ao início do módulo."
+   ],
+   "passos": [
+    {
+     "t": "Faça a contagem da sua prova",
+     "d": [
+      "Conte quantos itens você marcou com segurança."
+     ]
+    },
+    {
+     "t": "Decida se usa a modelagem",
+     "d": [
+      "Poucos itens seguros ou nota baixa: use a modelagem para subir.",
+      "Em dúvida com alguma noção da matéria: use, sobretudo se o item parecer errado.",
+      "Muitos itens seguros e nota acima do corte: não arrisque; deixe em branco."
+     ]
+    },
+    {
+     "t": "Procure os padrões mais frequentes",
+     "d": [
+      "Termos negativos (não), restritivas (somente, exclusivamente, unicamente), excludentes (todos, qualquer), deverá, contexto e estranheza."
+     ]
+    }
+   ],
+   "check": [
+    "Sei como funciona a pontuação do Certo/Errado.",
+    "Sei os três cenários de decisão.",
+    "Conheço os padrões mais frequentes do formato."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "No modelo Certo/Errado, o que acontece quando você deixa o item em branco?",
+     "o": [
+      "Perde um ponto.",
+      "Ganha meio ponto.",
+      "Não ganha nem perde ponto.",
+      "O item é anulado para todos."
+     ],
+     "c": 2,
+     "e": "Acerto soma, erro desconta e branco vale zero. Por isso arriscar exige critério.",
+     "tag": "Certo e Errado",
+     "id": "ce1-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Você marcou muitos itens com segurança e sua nota estimada está acima do corte. Restam itens sem nenhuma noção da matéria. O mais indicado é:",
+     "o": [
+      "Modelar e marcar todos.",
+      "Deixar esses itens em branco.",
+      "Marcar todos como Certo.",
+      "Marcar todos como Errado."
+     ],
+     "c": 1,
+     "e": "Nesse cenário, um erro pode tirar pontos que você já garantiu. A recomendação da aula é não arriscar.",
+     "tag": "Certo e Errado",
+     "id": "ce1-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Para que tipo de assertiva a modelagem é mais útil no Certo/Errado?",
+     "o": [
+      "As assertivas certas.",
+      "As assertivas erradas.",
+      "Igualmente para as duas.",
+      "Nenhuma das duas."
+     ],
+     "c": 1,
+     "e": "Os padrões são as marcas usadas para tornar uma afirmação errada. Para as assertivas certas, a técnica é pouco aplicável.",
+     "tag": "Certo e Errado",
+     "id": "ce1-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "C/E",
+   "downloads": []
+  },
+  {
+   "id": "ce2",
+   "mod": "m2",
+   "grupo": "Certo e Errado",
+   "label": "C/E · Aula 2",
+   "titulo": "Certo e Errado: AGU e IBAMA",
+   "obj": "Treinar o julgamento de itens de nível superior com deverá, não, apenas, somente e todas.",
+   "dica": "Enunciados longos e cansativos nem sempre trazem a informação de que você precisa. Vá ao item e procure o padrão.",
+   "antes": [
+    "Tenha o quadro aberto e julgue cada item antes da correção."
+   ],
+   "passos": [
+    {
+     "t": "AGU · 2015",
+     "d": [
+      "Item 5: “deve… e não de despacho” → Errado.",
+      "Item 20: “apenas parcialmente” + estranheza → Errado.",
+      "Item 25: PAD “deverá ser sobrestado” → Errado.",
+      "Item 63: “todos” + “apenas” → Errado."
+     ]
+    },
+    {
+     "t": "IBAMA · 2022",
+     "d": [
+      "Item 70: comunicar o IBAMA “somente se” → Errado.",
+      "Item 75: “todas as atividades” dispensadas → Errado."
+     ]
+    }
+   ],
+   "check": [
+    "Julguei os seis itens antes da correção.",
+    "Identifiquei os padrões de cada item."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Advogado da União AGU · 2015 (item 5)",
+     "p": "Julgue o item relativo à forma dos atos administrativos.",
+     "b": "O ato em questão, de indeferimento de pedido, deve ser prolatado sob a forma de resolução e não de despacho.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Dois padrões: “deve” e “não”. A resolução serve para estabelecer normas gerais; o despacho pode, sim, ser usado para responder a um pedido.",
+     "tag": "Certo e Errado",
+     "id": "ce2-q1"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Analista Ambiental IBAMA · 2022 (item 70)",
+     "p": "De acordo com a Lei do Óleo, julgue o item.",
+     "b": "O IBAMA deverá ser comunicado de incidentes envolvendo poluição por óleo em águas marítimas decorrentes de atividade em plataformas e suas instalações de apoio, para a tomada de providências de fiscalização, somente se houver impossibilidade de ações de salvaguarda da vida humana pela autoridade marítima.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. O art. 22 da lei manda comunicar imediatamente qualquer incidente ao órgão ambiental, independentemente das medidas tomadas. O “somente se” restringiu demais.",
+     "tag": "Certo e Errado",
+     "id": "ce2-q2"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Analista Ambiental IBAMA · 2022 (item 75)",
+     "p": "A respeito do licenciamento ambiental federal, julgue o item.",
+     "b": "São dispensadas de autorização pelo Congresso Nacional e de licenciamento ambiental pelo IBAMA todas as atividades públicas em terras indígenas cujos beneficiários sejam as comunidades indígenas.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. A Instrução Normativa nº 15/2018 traz uma lista específica de atividades não sujeitas ao licenciamento. Não são “todas”.",
+     "tag": "Certo e Errado",
+     "id": "ce2-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "C/E",
+   "downloads": []
+  },
+  {
+   "id": "ce3",
+   "mod": "m2",
+   "grupo": "Certo e Errado",
+   "label": "C/E · Aula 3",
+   "titulo": "Certo e Errado: ANM e MEC",
+   "obj": "Aplicar a modelagem em áreas técnicas (barragens) e na educação.",
+   "dica": "Mesmo em conteúdos que você não domina, como hidráulica, o padrão aparece. E o conhecimento do dia a dia ajuda a perceber a diferença de contexto.",
+   "antes": [
+    "Julgue cada item antes de ver a resolução."
+   ],
+   "passos": [
+    {
+     "t": "ANM · 2021",
+     "d": [
+      "Item 22: “não” + “unicamente” → Errado.",
+      "Item 39: improbidade “somente” enriquecimento ou prejuízo → Errado.",
+      "Item 55: canais de fluxo “deve” → Errado.",
+      "Item 90: “o único” medidor horizontal → Errado."
+     ]
+    },
+    {
+     "t": "MEC · 2023",
+     "d": [
+      "Item 60: ideias “devem ser suprimidas” → deverá + contexto → Errado.",
+      "Item 61: clima nacional e turnover “inibidores” → negativo + contexto → Errado.",
+      "Item 73: “não havendo mais” disciplina obrigatória → Errado."
+     ]
+    }
+   ],
+   "check": [
+    "Julguei os itens antes da correção.",
+    "Percebi a diferença de contexto nos itens do MEC."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Técnico ANM · 2021 (item 39)",
+     "p": "Julgue o item.",
+     "b": "São considerados atos de improbidade administrativa somente aqueles que importem em enriquecimento ilícito do infrator ou em prejuízo ao erário.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. A lei também prevê atos que atentam contra os princípios da administração pública. O “somente” deixou essa categoria de fora.",
+     "tag": "Certo e Errado",
+     "id": "ce3-q1"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Técnico em Assuntos Educacionais MEC · 2023 (item 73)",
+     "p": "Com base na Lei 9.394/1996, julgue o item.",
+     "b": "O chamado novo ensino médio passou a prever um currículo baseado em itinerários formativos diversos, não havendo mais a previsão de disciplinas de caráter obrigatório.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. A lei prevê estudos obrigatórios (como educação física, arte, sociologia e filosofia) e o ensino de língua portuguesa e matemática nos três anos.",
+     "tag": "Certo e Errado",
+     "id": "ce3-q2"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Técnico em Assuntos Educacionais MEC · 2023 (item 61)",
+     "p": "Acerca do modelo de múltiplos fluxos, julgue o item.",
+     "b": "O clima nacional (national mood) e as mudanças no interior do governo (turnover) são inibidores da mudança na agenda governamental.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Termo negativo e diferença de contexto: mudanças no clima nacional e no governo estimulam, e não inibem, a mudança de agenda.",
+     "tag": "Certo e Errado",
+     "id": "ce3-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "C/E",
+   "downloads": []
+  },
+  {
+   "id": "ce4",
+   "mod": "m2",
+   "grupo": "Certo e Errado",
+   "label": "C/E · Aula 4",
+   "titulo": "Certo e Errado: TCDF e EBSERH",
+   "obj": "Fechar o bloco de Certo/Errado com questões de procurador e de médicos especialistas.",
+   "dica": "Extrair os dados do caso hipotético (quem é a pessoa física, quem é a jurídica) ajuda a confirmar o que o padrão sugere.",
+   "antes": [
+    "Revise a regra de quando arriscar no Certo/Errado (aula 1 deste bloco)."
+   ],
+   "passos": [
+    {
+     "t": "TCDF · 2021",
+     "d": [
+      "Conduta do servidor “não constitui crime” → Errado.",
+      "Pessoa jurídica “não” sujeita a prestação de serviços → Errado.",
+      "Obrigação alternativa “somente” → Errado.",
+      "Herdeiros “não são legitimados” → Errado.",
+      "Regime próprio de “todos os servidores” → Errado."
+     ]
+    },
+    {
+     "t": "EBSERH · 2018",
+     "d": [
+      "Manobra de Valsalva “não provoca” expansão → Errado.",
+      "FAN positivo “não aumenta” o risco → Errado.",
+      "“Ainda não há evidências” → Errado.",
+      "“Não sendo necessária nenhuma intervenção” → Errado."
+     ]
+    }
+   ],
+   "check": [
+    "Julguei os itens antes da correção.",
+    "Sei extrair os dados do caso hipotético."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Procurador MPC/TCDF · 2021",
+     "p": "Julgue o item à luz da jurisprudência do STJ.",
+     "b": "O falecimento do titular do direito à indenização por danos morais não enseja a sua transmissão a terceiros, de modo que os herdeiros não são legitimados para prosseguir com a ação.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Dois termos negativos. A jurisprudência diz o contrário: o direito se transmite com o falecimento e os herdeiros podem ajuizar ou prosseguir com a ação.",
+     "tag": "Certo e Errado",
+     "id": "ce4-q1"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Procurador MPC/TCDF · 2021 (item 33)",
+     "p": "Acerca do regime próprio de previdência do DF, julgue o item.",
+     "b": "O regime próprio de previdência do Distrito Federal regula o plano de custeio e benefícios de todos os servidores titulares de cargos efetivos, comissionados e temporários do DF, incluindo os militares e policiais civis.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. Servidores exclusivamente comissionados e temporários não integram o regime, e militares e policiais civis têm regime próprio. O “todos” abriu demais.",
+     "tag": "Certo e Errado",
+     "id": "ce4-q2"
+    },
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Procurador MPC/TCDF · 2021",
+     "p": "Servidor que desconhecia a norma concedeu licença em desacordo com a legislação ambiental. Julgue o item.",
+     "b": "A conduta do servidor público é uma infração administrativa, mas não constitui crime previsto na legislação ambiental.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. O art. 67 da Lei de Crimes Ambientais tipifica conceder licença em desacordo com as normas ambientais. O “não constitui” tornou o item errado.",
+     "tag": "Certo e Errado",
+     "id": "ce4-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "C/E",
+   "downloads": []
+  },
+  {
+   "id": "esp-consulplan",
+   "mod": "m2",
+   "grupo": "Aulas especiais",
+   "label": "Especial",
+   "titulo": "Aplicação de modelagem em prova da Consulplan",
+   "obj": "Ver a técnica em uma prova inteira da Consulplan: 5 questões resolvidas sem ler o enunciado.",
+   "dica": "Quando não há termo campeão em uma posição, use outro padrão para eliminar (ex.: descarte as alternativas com “apenas”).",
+   "antes": [
+    "Separe a prova de biomédico da PMRN 2022 se quiser acompanhar no papel."
+   ],
+   "passos": [
+    {
+     "t": "Termos que mais se repetem",
+     "d": [
+      "Questão 14: Px, Py, Pz → A.",
+      "Questão 18: 2 e 32 → B.",
+      "Questão 47: lipólise/lipogênese + glicerol → sobraram A e B (50%); gabarito A."
+     ]
+    },
+    {
+     "t": "Combinação com restritivas",
+     "d": [
+      "Questão 50: íons Na na 1ª posição; descartar as com “apenas” → A ou C; gabarito A."
+     ]
+    },
+    {
+     "t": "Diferença de estrutura",
+     "d": [
+      "Questão 54: todas diretas; a B com “ou” quebra a estrutura → B."
+     ]
+    }
+   ],
+   "check": [
+    "Acompanhei as 5 questões.",
+    "Sei combinar padrões quando um só não basta."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Consulplan · Biomédico PMRN · 2022 (questão 54)",
+     "p": "Assinale a afirmativa INCORRETA:",
+     "o": [
+      "A) O sarcômero é a unidade contrátil da fibra muscular.",
+      "B) Na junção neuromuscular, as sinapses podem ser excitatórias ou inibitórias.",
+      "C) A placa motora é a região de junção entre a ramificação neural e a fibra muscular.",
+      "D) A acetilcolina é o neurotransmissor liberado pelos neurônios motores na junção neuromuscular.",
+      "E) A unidade motora é a junção entre o neurônio motor e as fibras estriadas esqueléticas por ele inervadas."
+     ],
+     "c": 1,
+     "e": "Todas seguem a estrutura direta “X é Y”. A B quebra o padrão com “podem ser… ou…”. Gabarito oficial: B.",
+     "tag": "Diferença de estrutura",
+     "id": "esp-consulplan-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Na 2ª posição, nenhum termo se repete, mas algumas alternativas têm “apenas”. O que o professor fez?",
+     "o": [
+      "Marcou uma das que têm “apenas”.",
+      "Descartou as que têm “apenas” e ficou entre as restantes.",
+      "Desistiu da questão.",
+      "Escolheu a alternativa mais longa."
+     ],
+     "c": 1,
+     "e": "Foi a questão 50: as restritivas saíram, sobraram A e C, e a chance subiu para 50%.",
+     "tag": "Combinação de padrões",
+     "id": "esp-consulplan-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "Esp",
+   "downloads": []
+  },
+  {
+   "id": "esp-fgv",
+   "mod": "m2",
+   "grupo": "Aulas especiais",
+   "label": "Especial",
+   "titulo": "Aplicação de modelagem em prova da FGV",
+   "obj": "Ver 16 de 70 questões (cerca de 23%) da PCMG 2024 resolvidas com modelagem.",
+   "dica": "A soma que aprova: base de conhecimento prévio + estudo específico + estratégias de prova.",
+   "antes": [
+    "Desenhe o quadro de padrões antes de começar, como o professor faz."
+   ],
+   "passos": [
+    {
+     "t": "Cálculo",
+     "d": [
+      "Questão 11: valor médio → C.",
+      "Questão 13: 45 e 55 semelhantes → A ou E (50%).",
+      "Questão 16: 27,25 e 27,50 → o valor médio entre eles, B."
+     ]
+    },
+    {
+     "t": "Contexto",
+     "d": [
+      "Questão 22: e-mail + ataque → phishing (B).",
+      "Questão 20: “programação de macros” fora do contexto de planilhas → D."
+     ]
+    },
+    {
+     "t": "Termos que mais se repetem",
+     "d": [
+      "Questões 15, 31, 33 e 35 resolvidas pela combinação de termos."
+     ]
+    }
+   ],
+   "check": [
+    "Acompanhei as questões e o gabarito.",
+    "Entendi como o contexto do enunciado aponta a resposta."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "FGV · Investigador PCMG · 2024 (questão 22)",
+     "p": "João recebeu um e-mail com o título “Atualize sua senha agora para evitar bloqueio de conta”, com um link para uma página idêntica à do seu banco, onde inseriu suas credenciais. Dias depois, a conta foi acessada sem autorização. O ataque sofrido foi:",
+     "o": [
+      "A) ransomware, pois houve tentativa de bloqueio do acesso à conta.",
+      "B) phishing, pois o atacante usou o e-mail para capturar as credenciais de João.",
+      "C) DDoS, já que a conta foi acessada sem autorização, prejudicando o serviço.",
+      "D) spoofing, pois João foi induzido a revelar informações sensíveis.",
+      "E) malware, porque o e-mail provavelmente continha um programa malicioso."
+     ],
+     "c": 1,
+     "e": "As palavras-chave do enunciado são e-mail e ataque. A B é a única que traz as duas ideias (atacante + e-mail + credenciais). Gabarito oficial: B.",
+     "tag": "Sentido e contexto",
+     "id": "esp-fgv-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Em uma questão de cálculo, as alternativas são 12, 21, 33, 44 e 57. Sem fazer a conta, qual escolha segue a ideia do valor médio usada na aula?",
+     "o": [
+      "12",
+      "33",
+      "57",
+      "Qualquer uma: não há critério."
+     ],
+     "c": 1,
+     "e": "Fora dos extremos, o valor central tende a concentrar as respostas. Foi o raciocínio da questão 11 da PCMG.",
+     "tag": "Semelhança entre resultados",
+     "id": "esp-fgv-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "Esp",
+   "downloads": []
+  },
+  {
+   "id": "esp-cesgranrio",
+   "mod": "m2",
+   "grupo": "Aulas especiais",
+   "label": "Especial",
+   "titulo": "Aplicação de modelagem em prova da Cesgranrio (Caixa)",
+   "obj": "Ver duas das sete questões da prova de técnico bancário da Caixa 2024 resolvidas com modelagem.",
+   "dica": "Quando o padrão aparece em todas as alternativas menos uma, a exceção é a candidata.",
+   "antes": [
+    "Revise os padrões de palavras restritivas e termos negativos."
+   ],
+   "passos": [
+    {
+     "t": "Questão 37 (OPA)",
+     "d": [
+      "A, B, C e D terminam em “apenas”. A E não → E."
+     ]
+    },
+    {
+     "t": "Questão 43 (GAN)",
+     "d": [
+      "A “exclusivamente”, B “apenas”, D “incapazes”, E “não poderem”. A C não tem padrão → C."
+     ]
+    }
+   ],
+   "check": [
+    "Resolvi as duas questões antes da correção."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Cesgranrio · Técnico Bancário Caixa · 2024 (questão 43)",
+     "p": "Em 2014, as Redes Adversárias Generativas (GAN) revolucionaram o aprendizado de máquina. As GAN caracterizam-se por:",
+     "o": [
+      "A) serem usadas exclusivamente para classificação de imagens.",
+      "B) consistirem apenas em um gerador de ruídos e uma rede neural classificatória.",
+      "C) serem compostas por duas redes neurais, uma discriminadora e outra geradora.",
+      "D) serem incapazes de aprender a partir de conjuntos de dados não supervisionados.",
+      "E) não poderem ser aplicadas para gerar conteúdo linguístico."
+     ],
+     "c": 2,
+     "e": "A (exclusivamente) e B (apenas) são restritivas; D (incapazes) e E (não poderem) são negativas. A C é a única sem padrão. Gabarito oficial: C.",
+     "tag": "Combinação de padrões",
+     "id": "esp-cesgranrio-q1"
+    },
+    {
+     "t": "mc",
+     "fonte": "Cesgranrio · Técnico Bancário Caixa · 2024 (questão 37)",
+     "p": "Quatro alternativas listam critérios de preço aceitos pela CVM terminando com “apenas”. A quinta lista patrimônio líquido a preço de mercado, fluxo de caixa descontado e múltiplos de mercado, sem “apenas”. Qual marcar?",
+     "o": [
+      "Uma das quatro com “apenas”.",
+      "A alternativa sem “apenas”.",
+      "Nenhuma: deixar em branco.",
+      "A mais curta."
+     ],
+     "c": 1,
+     "e": "O examinador usou a restritiva para tornar quatro alternativas erradas. A que não restringe era a E, o gabarito.",
+     "tag": "Palavras restritivas",
+     "id": "esp-cesgranrio-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "Esp",
+   "downloads": []
+  },
+  {
+   "id": "bal1",
+   "mod": "m3",
+   "label": "Aula 01",
+   "titulo": "Balanceamento entre alternativas",
+   "obj": "Saber chutar com lógica quando o tempo acaba, nas provas de múltipla escolha e de Certo/Errado.",
+   "dica": "Uma prova justa distribui as respostas entre as letras. Por isso, a letra que você menos marcou é a que tem mais chance nas questões que sobraram.",
+   "antes": [
+    "Tenha em mãos o gabarito de uma prova que você já fez, se possível."
+   ],
+   "passos": [
+    {
+     "t": "Entenda o balanceamento",
+     "d": [
+      "ENEM 2022: A 20, B 19, C 18, D 15, E 18.",
+      "FGV · TRT16: A 17, B 16, C 20, D 12, E 15.",
+      "Cebraspe · TJCE: A 16, B 19, C 21, D 20, E 14."
+     ]
+    },
+    {
+     "t": "Aplique a técnica do chute",
+     "d": [
+      "Conte quantas vezes você marcou cada letra.",
+      "Chute a letra menos marcada em todas as questões restantes. Não invente desenhos no gabarito.",
+      "Antes, elimine absurdas e tente a modelagem. Se a letra indicada for absurda na questão, vá para a segunda menos marcada."
+     ]
+    },
+    {
+     "t": "No Certo/Errado, só com segurança",
+     "d": [
+      "Cebraspe: 96 certas e 97 erradas.",
+      "Chute só se você julgou com segurança grande parte da prova. Comece pelas erradas, que são mais fáceis de identificar.",
+      "Ex.: 100 erradas + 70 certas + 30 em dúvida → chute as 30 como Certo."
+     ]
+    }
+   ],
+   "check": [
+    "Sei contar as letras do meu gabarito.",
+    "Sei qual letra chutar e por quê.",
+    "Sei quando chutar e quando deixar em branco no Certo/Errado."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "fonte": "Exercício proposto na aula",
+     "p": "Seu tempo está acabando. No cartão, você marcou com segurança: A = 15 vezes, B = 5, C = 9, D = 10. Que letra você chuta nas questões restantes?",
+     "o": [
+      "A",
+      "B",
+      "C",
+      "D"
+     ],
+     "c": 1,
+     "e": "A letra menos marcada (B) é a que, pela probabilidade, mais deve aparecer entre as restantes. Chute B em todas.",
+     "tag": "Balanceamento",
+     "id": "bal1-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Prova Cebraspe de 200 itens. Você julgou com segurança 100 como Errado e 70 como Certo. Restam 30 em dúvida. Pela análise de balanceamento:",
+     "o": [
+      "Deixe todos em branco.",
+      "Chute os 30 como Certo.",
+      "Chute os 30 como Errado.",
+      "Alterne Certo e Errado."
+     ],
+     "c": 1,
+     "e": "Com a distribuição perto de metade/metade, faltam cerca de 30 itens Certos. Chutar Certo dá maior chance de saldo positivo — desde que você confie nas marcações que já fez.",
+     "tag": "Balanceamento",
+     "id": "bal1-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Qual atitude a aula desaconselha ao chutar?",
+     "o": [
+      "Eliminar alternativas absurdas antes.",
+      "Chutar uma única letra em todas as questões restantes.",
+      "Montar desenhos no gabarito (cruz, V, zigue-zague).",
+      "Usar a modelagem antes do chute."
+     ],
+     "c": 2,
+     "e": "Desenhos no gabarito não têm base. A orientação é uma única letra, a menos marcada.",
+     "tag": "Balanceamento",
+     "id": "bal1-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "bal2",
+   "mod": "m3",
+   "label": "Aula 02",
+   "titulo": "Demonstração: como fazer a análise do balanceamento",
+   "obj": "Contar as letras do gabarito de provas anteriores da sua banca.",
+   "dica": "Faça essa análise nos gabaritos da sua banca durante a preparação. No dia da prova, você já saberá como ela distribui as respostas.",
+   "antes": [
+    "Baixe no site da banca o gabarito de uma prova anterior.",
+    "Abra um editor de texto (Word ou Google Docs)."
+   ],
+   "passos": [
+    {
+     "t": "Copie só as respostas",
+     "d": [
+      "Copie os números das questões e as letras do gabarito e cole no editor."
+     ]
+    },
+    {
+     "t": "Conte com Ctrl+F",
+     "d": [
+      "Busque cada letra e anote a quantidade.",
+      "Monte uma tabela: A, B, C, D, E (ou Certo e Errado)."
+     ]
+    },
+    {
+     "t": "Interprete",
+     "d": [
+      "TJCE: A 16, B 19, C 21, D 20, E 14 — variam, mas giram em torno da média.",
+      "Questões anuladas explicam totais que não fecham."
+     ]
+    }
+   ],
+   "check": [
+    "Fiz a contagem de pelo menos um gabarito da minha banca.",
+    "Registrei a distribuição em uma tabela."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Ordem correta para analisar o balanceamento de uma prova:",
+     "o": [
+      "Contar de cabeça enquanto lê a prova.",
+      "Baixar o gabarito, copiar as respostas no editor, contar cada letra com Ctrl+F e montar uma tabela.",
+      "Pedir o gabarito ao fiscal.",
+      "Olhar só as 10 primeiras questões."
+     ],
+     "c": 1,
+     "e": "É o passo a passo demonstrado em aula, com o gabarito do TJCE e o da PGDF.",
+     "tag": "Balanceamento",
+     "id": "bal2-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Uma prova Certo/Errado de 200 itens teve 96 certas e 97 erradas. Por que não soma 200?",
+     "o": [
+      "Erro de contagem da banca.",
+      "Porque alguns itens foram anulados.",
+      "Porque os itens em branco não contam.",
+      "Porque a banca esconde parte do gabarito."
+     ],
+     "c": 1,
+     "e": "Itens anulados saem da contagem, como explicado em aula.",
+     "tag": "Balanceamento",
+     "id": "bal2-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "rev1",
+   "mod": "m4",
+   "label": "Aula 01",
+   "titulo": "O que é a modelagem reversa",
+   "obj": "Entender o caminho inverso: começar pela banca, voltar ao material de base e criar um modelo mental.",
+   "dica": "A modelagem reversa é um passo a mais para quem já está familiarizado com a disciplina e não consegue elevar o índice de acertos.",
+   "antes": [
+    "Escolha a banca do seu próximo concurso e reúna duas provas anteriores dela."
+   ],
+   "passos": [
+    {
+     "t": "Saia do caminho comum",
+     "d": [
+      "O comum: cursinho → videoaulas → exercícios genéricos → reprovação → repetir tudo.",
+      "O reverso: banca → questões da banca → material de base → modelo mental."
+     ]
+    },
+    {
+     "t": "Mapeie a banca",
+     "d": [
+      "Estilos de questão e comandos (correta, incorreta, julgue).",
+      "Como ela constrói as certas (diretas? prolixas?) e as erradas (troca termos? mistura trechos da norma?)."
+     ]
+    },
+    {
+     "t": "Aplique em dois momentos",
+     "d": [
+      "Ao estudar: leitura intencional, pensando em possíveis questões e pegadinhas.",
+      "Ao resolver questões: marque o trecho errado e anote por quê."
+     ]
+    }
+   ],
+   "check": [
+    "Sei explicar a diferença entre o caminho comum e o reverso.",
+    "Escolhi a banca que vou mapear.",
+    "Sei em que dois momentos aplicar."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Qual é a sequência da modelagem reversa?",
+     "o": [
+      "Videoaulas → resumo → prova.",
+      "Banca e questões da banca → material de base → modelo mental → estudo.",
+      "Material de base → decorar → prova.",
+      "Simulado → férias → simulado."
+     ],
+     "c": 1,
+     "e": "Você começa pela forma como a banca cobra e só depois volta ao material, comparando e construindo o modelo mental.",
+     "tag": "Modelagem reversa",
+     "id": "rev1-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Para quem a modelagem reversa é mais indicada?",
+     "o": [
+      "Para quem nunca viu a disciplina.",
+      "Para quem já tem familiaridade com a disciplina e precisa de um passo a mais.",
+      "Somente para quem faz ENEM.",
+      "Para quem não pretende resolver questões."
+     ],
+     "c": 1,
+     "e": "O professor alerta: é importante já conhecer os conceitos básicos. A técnica é um complemento.",
+     "tag": "Modelagem reversa",
+     "id": "rev1-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Em qual conceito a modelagem reversa se fundamenta?",
+     "o": [
+      "Meta-aprendizagem (aprender a aprender).",
+      "Decoreba por repetição.",
+      "Leitura dinâmica.",
+      "Sorte probabilística."
+     ],
+     "c": 0,
+     "e": "Meta-aprendizagem é conhecer e selecionar as estratégias que melhoram o aprendizado para cada situação — aqui, para cada banca.",
+     "tag": "Modelagem reversa",
+     "id": "rev1-q3"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "rev2",
+   "mod": "m4",
+   "label": "Aula 02",
+   "titulo": "Exemplo de modelagem reversa 1: Cebraspe",
+   "obj": "Ver como o examinador construiu um item errado a partir do texto constitucional.",
+   "dica": "Compare o item com o material de base palavra por palavra. A troca de um órgão por outro é uma pegadinha clássica.",
+   "antes": [
+    "Tenha a Constituição Federal aberta no art. 49."
+   ],
+   "passos": [
+    {
+     "t": "Leia o item da PF (2025)",
+     "d": [
+      "“O Senado Federal possui competência exclusiva para sustar os atos normativos do Poder Executivo que exorbitem do poder regulamentar, … sem necessidade de manifestação da Câmara dos Deputados.”"
+     ]
+    },
+    {
+     "t": "Compare com o material de base",
+     "d": [
+      "A CF diz: é competência exclusiva do Congresso Nacional.",
+      "O examinador trocou Congresso por Senado e usou “sem” para excluir a Câmara."
+     ]
+    },
+    {
+     "t": "Anote o modelo",
+     "d": [
+      "Registre: “Cebraspe troca órgãos e exclui um deles com palavra excludente”."
+     ]
+    }
+   ],
+   "check": [
+    "Identifiquei a troca de órgão.",
+    "Anotei a pegadinha no meu material de base."
+   ],
+   "q": [
+    {
+     "t": "ce",
+     "fonte": "Cebraspe · Polícia Federal, carreira administrativa · 2025",
+     "p": "Julgue o item com base na CF e no entendimento do STF.",
+     "b": "O Senado Federal possui competência exclusiva para sustar os atos normativos do Poder Executivo que exorbitem do poder regulamentar, exercendo tal controle diretamente, sem necessidade de manifestação da Câmara dos Deputados.",
+     "o": [
+      "Certo",
+      "Errado"
+     ],
+     "c": 1,
+     "e": "Errado. A competência é do Congresso Nacional (Senado + Câmara). O examinador trocou o órgão e usou “sem” para excluir a Câmara.",
+     "tag": "Modelagem reversa",
+     "id": "rev2-q1"
+    },
+    {
+     "t": "mc",
+     "p": "O que você deve fazer depois de identificar essa pegadinha?",
+     "o": [
+      "Nada: seguir para a próxima questão.",
+      "Marcar o trecho no material de base e anotar como a banca construiu o erro.",
+      "Decorar o número da questão.",
+      "Trocar de banca."
+     ],
+     "c": 1,
+     "e": "Esse registro é o que forma o modelo mental. Se cair algo parecido, você reconhece a armadilha.",
+     "tag": "Modelagem reversa",
+     "id": "rev2-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "rev3",
+   "mod": "m4",
+   "label": "Aula 03",
+   "titulo": "Exemplo de modelagem reversa 2: FGV",
+   "obj": "Aplicar a análise reversa em questões de verdadeiro/falso e de alternativa correta da FGV.",
+   "dica": "Não pare na alternativa certa: analise cada alternativa e anote por que as outras estão erradas ou certas.",
+   "antes": [
+    "Separe questões recentes da FGV da sua área."
+   ],
+   "passos": [
+    {
+     "t": "Verdadeiro ou falso",
+     "d": [
+      "PMSP, tenente médico (2022): marque o trecho errado de cada afirmativa e compare com o material de base."
+     ]
+    },
+    {
+     "t": "Assinale a correta",
+     "d": [
+      "Receita Federal (2025): “sem supervisão”, “só poderá”, “sempre”, “não” tornavam as erradas falsas.",
+      "A FGV costuma pedir a alternativa correta."
+     ]
+    }
+   ],
+   "check": [
+    "Analisei todas as alternativas, não só a correta.",
+    "Anotei os padrões que a FGV usou."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Pela análise feita em aula, que tipo de comando a FGV costuma usar mais?",
+     "o": [
+      "Assinale a alternativa correta.",
+      "Julgue Certo/Errado.",
+      "Questões abertas.",
+      "Assinale a soma das corretas."
+     ],
+     "c": 0,
+     "e": "O professor percebeu, analisando provas, que a FGV cobra muito a alternativa correta (também aparece a incorreta).",
+     "tag": "Modelagem reversa",
+     "id": "rev3-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Ao estudar uma questão que pede a correta, o que fazer com as alternativas erradas?",
+     "o": [
+      "Ignorar.",
+      "Comparar cada uma com o material de base, marcar o trecho errado e anotar o porquê.",
+      "Copiar todas no caderno sem análise.",
+      "Decorar as letras."
+     ],
+     "c": 1,
+     "e": "Cada alternativa é material de estudo. É assim que você aprende como a banca constrói o erro.",
+     "tag": "Modelagem reversa",
+     "id": "rev3-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "rev4",
+   "mod": "m4",
+   "label": "Aula 04",
+   "titulo": "Exemplo de modelagem reversa 3: ENEM",
+   "obj": "Entender o estilo do ENEM: enunciado longo, resposta muitas vezes no próprio texto.",
+   "dica": "No ENEM, interpretar o enunciado e o comando costuma entregar a resposta. Treine leitura, tempo e a relação dos conceitos com o cotidiano.",
+   "antes": [
+    "Pegue uma prova recente do ENEM da sua área."
+   ],
+   "passos": [
+    {
+     "t": "Leia o enunciado como fonte",
+     "d": [
+      "Na questão de fitoextração, o próprio enunciado explicava o conceito."
+     ]
+    },
+    {
+     "t": "Ajuste o estudo",
+     "d": [
+      "Não basta decorar conceitos: relacione-os a situações do dia a dia.",
+      "Gerencie o tempo, porque as questões são longas."
+     ]
+    }
+   ],
+   "check": [
+    "Sei procurar a resposta no enunciado.",
+    "Ajustei meu estudo para relacionar conceitos ao cotidiano."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Qual é a principal dica de modelagem reversa para o ENEM?",
+     "o": [
+      "Decorar o maior número possível de definições.",
+      "Interpretar o enunciado e o comando, pois a resposta muitas vezes está no próprio texto.",
+      "Pular os textos de apoio.",
+      "Responder pelas alternativas mais curtas."
+     ],
+     "c": 1,
+     "e": "O ENEM traz enunciados longos e cheios de informação. A interpretação correta costuma levar à resposta.",
+     "tag": "Modelagem reversa",
+     "id": "rev4-q1"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "rev5",
+   "mod": "m4",
+   "label": "Aula 05",
+   "titulo": "Método M.A.P.A.",
+   "obj": "Usar o M.A.P.A. para aplicar a modelagem reversa em qualquer banca.",
+   "dica": "M.A.P.A. = Modelagem da banca, Análise reversa, identificação de Padrões, Aplicação prática.",
+   "antes": [
+    "Tenha à mão as provas da banca que você escolheu na aula 01 do módulo."
+   ],
+   "passos": [
+    {
+     "t": "M · Modelagem da banca",
+     "d": [
+      "Estilos de questão, comandos e padrões de cobrança."
+     ]
+    },
+    {
+     "t": "A · Análise reversa",
+     "d": [
+      "Compare o que a banca cobrou com o material de base: como ela forma as certas e as erradas."
+     ]
+    },
+    {
+     "t": "P · Padrões",
+     "d": [
+      "Temas recorrentes, pegadinhas, palavras do quadro de padrões, forma típica de redigir."
+     ]
+    },
+    {
+     "t": "A · Aplicação prática",
+     "d": [
+      "Leitura intencional, crie suas próprias questões, marque pontos críticos e faça anotações estratégicas."
+     ]
+    }
+   ],
+   "check": [
+    "Sei o que significa cada letra do M.A.P.A.",
+    "Apliquei o M.A.P.A. em ao menos uma prova da minha banca."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "O que significa o primeiro “A” do método M.A.P.A.?",
+     "o": [
+      "Aplicação prática",
+      "Análise reversa",
+      "Atenção ao comando",
+      "Anotação livre"
+     ],
+     "c": 1,
+     "e": "M (modelagem da banca), A (análise reversa), P (padrões) e A (aplicação prática).",
+     "tag": "M.A.P.A.",
+     "id": "rev5-q1"
+    },
+    {
+     "t": "mc",
+     "p": "“Ler o material pensando em como aquilo pode virar questão e criar suas próprias questões” pertence a qual etapa?",
+     "o": [
+      "Modelagem da banca",
+      "Análise reversa",
+      "Padrões",
+      "Aplicação prática"
+     ],
+     "c": 3,
+     "e": "Leitura intencional, formular questões e fazer anotações estratégicas são a aplicação prática nas sessões de estudo.",
+     "tag": "M.A.P.A.",
+     "id": "rev5-q2"
+    }
+   ],
+   "video": "",
+   "sigla": "",
+   "downloads": []
+  },
+  {
+   "id": "ebook",
+   "mod": "m5",
+   "label": "Bônus",
+   "titulo": "Ebook: Marque o X no lugar certo (Tríade do Sucesso)",
+   "obj": "Organizar a preparação com a Tríade do Sucesso: foco, parâmetro e método.",
+   "dica": "O ebook complementa o curso: a modelagem ganha questões na prova, e a Tríade organiza o estudo para você chegar lá com índice alto.",
+   "antes": [
+    "Baixe o ebook na área de bônus da plataforma."
+   ],
+   "passos": [
+    {
+     "t": "Foco",
+     "d": [
+      "Mentalidade de campeão: buscar mais de 90% de acertos.",
+      "Ambiente externo (conforto, luz, som) e interno (saúde, exercício, higiene mental, sono)."
+     ]
+    },
+    {
+     "t": "Parâmetro",
+     "d": [
+      "Edital, cronograma semanal e estratégia do eixo base.",
+      "Simulados S1M (1 por mês, mais de 6 meses até a prova) ou S2M (2 por mês, menos de 6 meses).",
+      "Revisões: imediata, no dia seguinte, após 7 dias e após 30 dias."
+     ]
+    },
+    {
+     "t": "Método",
+     "d": [
+      "Scanning → resumo → exercícios; 50 min de estudo e 10 de pausa; estudo ativo.",
+      "Memorização com o método C.A.R.P.A.: Conceito, Aplicação, Regras, Prazos/fórmulas, Associação mental."
+     ]
+    }
+   ],
+   "check": [
+    "Sei os três pilares da Tríade.",
+    "Montei meu ciclo de revisões.",
+    "Escolhi entre S1M e S2M."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Quais são os três pilares da Tríade do Sucesso?",
+     "o": [
+      "Foco, parâmetro e método",
+      "Leitura, resumo e prova",
+      "Sorte, tempo e chute",
+      "Edital, banca e gabarito"
+     ],
+     "c": 0,
+     "e": "Foco (concentrar energia), parâmetro (conhecer o concurso e medir o desempenho) e método (estudar com técnica).",
+     "tag": "Tríade do Sucesso",
+     "id": "ebook-q1"
+    },
+    {
+     "t": "mc",
+     "p": "Faltam 4 meses para a prova. Pelo ebook, qual ritmo de simulados usar?",
+     "o": [
+      "S1M: 1 simulado por mês",
+      "S2M: 2 simulados por mês",
+      "Nenhum simulado",
+      "1 simulado por semestre"
+     ],
+     "c": 1,
+     "e": "Com menos de 6 meses, o S2M (um a cada 15 dias) acelera a evolução e condiciona para alta performance.",
+     "tag": "Tríade do Sucesso",
+     "id": "ebook-q2"
+    },
+    {
+     "t": "mc",
+     "p": "Qual é a sequência de revisões proposta para vencer a curva do esquecimento?",
+     "o": [
+      "Só na véspera da prova",
+      "Imediata, no dia seguinte, após 7 dias e após 30 dias",
+      "A cada 6 meses",
+      "Uma vez por ano"
+     ],
+     "c": 1,
+     "e": "A repetição intervalada em quatro momentos reforça a memória de longo prazo.",
+     "tag": "Tríade do Sucesso",
+     "id": "ebook-q3"
+    },
+    {
+     "t": "mc",
+     "p": "No método C.A.R.P.A., o que significa o “P”?",
+     "o": [
+      "Pausa",
+      "Prazos ou fórmulas",
+      "Prova",
+      "Planejamento"
+     ],
+     "c": 1,
+     "e": "Conceito, Aplicação, Regras, Prazos (ou fórmulas) e Associação mental.",
+     "tag": "Tríade do Sucesso",
+     "id": "ebook-q4"
+    }
+   ],
+   "video": "",
+   "sigla": "Bônus",
+   "downloads": []
+  },
+  {
+   "id": "coletanea",
+   "mod": "m5",
+   "label": "Bônus",
+   "titulo": "Coletânea de provas diversas",
+   "obj": "Usar a coletânea para praticar a modelagem, o balanceamento e a modelagem reversa.",
+   "dica": "Pratique a técnica nos estudos e nos simulados, várias vezes, até ficar proficiente. Use a técnica só nas questões que você não sabe pelo estudo.",
+   "antes": [
+    "Escolha da coletânea uma prova da sua banca ou da sua área."
+   ],
+   "passos": [
+    {
+     "t": "Resolva como se fosse a prova",
+     "d": [
+      "Marque o tempo. Responda primeiro o que você sabe."
+     ]
+    },
+    {
+     "t": "Modele o que sobrou",
+     "d": [
+      "Desenhe o quadro de padrões e aplique nas questões em dúvida. Registre quais padrões apareceram."
+     ]
+    },
+    {
+     "t": "Confira e analise",
+     "d": [
+      "Compare com o gabarito oficial e conte quantas questões a modelagem trouxe.",
+      "Faça a contagem do balanceamento do gabarito e anote como a banca constrói as erradas (M.A.P.A.)."
+     ]
+    }
+   ],
+   "check": [
+    "Resolvi ao menos uma prova completa da coletânea.",
+    "Contei quantas questões ganhei com a modelagem.",
+    "Fiz a análise de balanceamento do gabarito."
+   ],
+   "q": [
+    {
+     "t": "mc",
+     "p": "Qual a melhor forma de ficar proficiente na modelagem?",
+     "o": [
+      "Assistir às aulas uma vez.",
+      "Praticar em muitos exercícios e simulados, registrando os padrões que aparecem.",
+      "Usar só no dia da prova.",
+      "Decorar as respostas das aulas."
+     ],
+     "c": 1,
+     "e": "O professor reforça: para chegar à proficiência, use a técnica várias vezes nos estudos, exercícios e simulados.",
+     "tag": "Prática",
+     "id": "coletanea-q1"
+    }
+   ],
+   "video": "",
+   "sigla": "Bônus",
+   "downloads": []
+  }
+ ],
+ "padroes": [
+  {
+   "id": "tamanho",
+   "nome": "Diferença de tamanho",
+   "sinal": "Uma alternativa muito maior ou muito menor que as demais.",
+   "acao": "Desconfie da alternativa fora do tamanho padrão: o examinador juntou trechos de outro ponto da norma ou acrescentou informação para torná-la errada.",
+   "ex": "FGV · TRT16 (2022): a alternativa A, a menor e com uma única sanção, era a correta.",
+   "aula": "a04"
+  },
+  {
+   "id": "restritivas",
+   "nome": "Palavras restritivas",
+   "sinal": "apenas · somente · exclusivamente · obrigatoriamente · unicamente · estritamente · único",
+   "acao": "Restringem demais a situação. Direito, saúde e muitas áreas admitem mais de uma possibilidade: a alternativa restritiva tende a estar errada.",
+   "ex": "Cebraspe: “a licitação é exigida apenas para a concessão” — Errado (vale para concessão e permissão).",
+   "aula": "a05"
+  },
+  {
+   "id": "excludentes",
+   "nome": "Palavras excludentes",
+   "sinal": "qualquer · todos/todas · tudo · sem · nenhum · ninguém · nada · nunca · em hipótese alguma",
+   "acao": "Abrem demais o leque e apagam um caso específico. Quando a regra tem condições, essas palavras costumam tornar a alternativa errada.",
+   "ex": "Cebraspe: “inscrição em conselho para o exercício de qualquer atividade profissional” — Errado.",
+   "aula": "a06"
+  },
+  {
+   "id": "negativos",
+   "nome": "Termos negativos",
+   "sinal": "não · inibe · não há · não constitui",
+   "acao": "O jeito mais simples de tornar falsa uma frase verdadeira é negá-la. Muito comum no Certo/Errado e quando o comando pede a INCORRETA.",
+   "ex": "“Um mais um não são dois.” A negação transforma o certo em errado.",
+   "aula": "a07"
+  },
+  {
+   "id": "poderdever",
+   "nome": "Poderá e deverá",
+   "sinal": "poderá · pode · deverá · deve · poderia",
+   "acao": "Poderá indica possibilidade; deverá indica obrigação. O examinador troca uma pela outra. Acenda a luz sempre que elas aparecerem.",
+   "ex": "“Qualquer pessoa deve prender quem está em flagrante” — na verdade, qualquer pessoa pode; as autoridades devem.",
+   "aula": "a08"
+  },
+  {
+   "id": "tempos",
+   "nome": "Tempos verbais ou classes de palavras diferentes",
+   "sinal": "Todas com verbo no infinitivo e uma no gerúndio · todas substantivos e uma adjetivo.",
+   "acao": "Teste uma expressão antes de cada alternativa (ex.: “processo de…”). A que não se encaixa está fora do padrão.",
+   "ex": "FGV · CBMAM: aproveitamento, readaptação, reversão, agregação… e “excedente”.",
+   "aula": "a09"
+  },
+  {
+   "id": "contexto",
+   "nome": "Diferença de sentido e contexto",
+   "sinal": "Todas falam de mecanismo, uma fala de comportamento · todas de uso próprio, uma de uso por terceiros.",
+   "acao": "Descubra o que une a maioria das alternativas e procure a que está fora (ou a única que conversa com o enunciado).",
+   "ex": "ENEM 2022: exilado, foragido, refugiado, clandestino têm pátria; o apátrida, não.",
+   "aula": "a10"
+  },
+  {
+   "id": "estrutura",
+   "nome": "Diferença de estrutura",
+   "sinal": "Todas no formato “palavra + preposição + palavra” e uma com barra, vírgulas ou duas palavras.",
+   "acao": "O trecho que veio de outro lugar da norma quebra a forma das demais. A quebra de estrutura denuncia a alternativa a marcar.",
+   "ex": "Cebraspe · DPE/AL (2017): a C tinha duas palavras e as outras, uma só.",
+   "aula": "a11"
+  },
+  {
+   "id": "estranheza",
+   "nome": "Incômodo ou estranheza",
+   "sinal": "Uma redação que ninguém usaria, uma regra que fere uma norma maior.",
+   "acao": "Funciona melhor para quem estudou: se a alternativa causa incômodo, sobretudo quando se pede a incorreta, ela é forte candidata.",
+   "ex": "CBMMG: “poderá ser inobservada a condição de habilitação do substituto”.",
+   "aula": "a12"
+  },
+  {
+   "id": "repeticao",
+   "nome": "Combinação dos termos que mais se repetem",
+   "sinal": "Alternativas formadas por 2 ou 3 termos combinados.",
+   "acao": "Em cada posição, ache o termo que mais aparece. Marque a alternativa que junta os mais repetidos de cada posição.",
+   "ex": "FGV · TRT16: “uma hora / nenhum intervalo / 15 minutos” — alternativa B.",
+   "aula": "a13"
+  },
+  {
+   "id": "absurdas",
+   "nome": "Eliminação de alternativas absurdas",
+   "sinal": "Alternativas que não têm relação com o que o enunciado pede.",
+   "acao": "Elimine as absurdas antes de decidir. Com 5 alternativas, eliminar 3 sobe sua chance de 20% para 50%.",
+   "ex": "ALECE (2021): decisões concentradas no topo → não pode ser “horizontalizada” nem “descentralizada”.",
+   "aula": "a14"
+  },
+  {
+   "id": "genericos",
+   "nome": "Textos mais genéricos e menos restritivos",
+   "sinal": "Uma alternativa aberta entre outras cheias de “deverá obrigatoriamente”, “apenas”, “toda”.",
+   "acao": "Quando o comando pede a correta, a alternativa menos restritiva costuma ser a resposta.",
+   "ex": "Cesgranrio · Transpetro: a única sem “apenas”, “somente” ou “toda” era a C.",
+   "aula": "a15"
+  },
+  {
+   "id": "semelhanca",
+   "nome": "Semelhança entre os resultados",
+   "sinal": "Questões de cálculo com respostas muito próximas (2,1 · 2,5 · 3,1).",
+   "acao": "O examinador cria vizinhos da resposta certa para confundir. Procure o grupo de valores parecidos e, entre eles, o que repete o padrão (ou o valor médio).",
+   "ex": "FGV · MPSC: 33,5 e 33,1 eram os mais próximos; a resposta estava entre eles.",
+   "aula": "a16"
+  },
+  {
+   "id": "teste",
+   "nome": "Teste de alternativas (cálculo)",
+   "sinal": "Você não sabe montar a equação, mas consegue fazer a conta de trás para frente.",
+   "acao": "Substitua as alternativas no problema. Comece pelo valor intermediário: se passar, desça; se faltar, suba.",
+   "ex": "MP/GO (2019): testar 8 deu 2.612; testar 7 deu exatamente 2.012.",
+   "aula": "a18"
+  }
+ ],
+ "treino": [
+  {
+   "id": "d1",
+   "t": "mc",
+   "p": "“O pagamento pode ser feito apenas em dinheiro.” Que padrão aparece?",
+   "o": [
+    "Palavra restritiva",
+    "Palavra excludente",
+    "Termo negativo",
+    "Diferença de estrutura"
+   ],
+   "c": 0,
+   "e": "“Apenas” restringe a situação.",
+   "tag": "Quadro"
+  },
+  {
+   "id": "d2",
+   "t": "mc",
+   "p": "“Qualquer servidor poderá conceder a licença.” Quais padrões aparecem?",
+   "o": [
+    "Restritiva e negativo",
+    "Excludente e poderá",
+    "Só tamanho",
+    "Nenhum"
+   ],
+   "c": 1,
+   "e": "“Qualquer” abre o leque (excludente) e “poderá” é o outro sinal de alerta.",
+   "tag": "Quadro"
+  },
+  {
+   "id": "d3",
+   "t": "mc",
+   "p": "Alternativas: “2,1 · 2,5 · 3,1 · 4,8 · 1,5”. Qual padrão usar?",
+   "o": [
+    "Semelhança entre resultados",
+    "Estranheza",
+    "Termos negativos",
+    "Tempos verbais"
+   ],
+   "c": 0,
+   "e": "Questão de cálculo com valores próximos: semelhança entre resultados.",
+   "tag": "Quadro"
+  },
+  {
+   "id": "d4",
+   "t": "mc",
+   "p": "Todas as alternativas combinam dois termos, e alguns se repetem muito em cada posição. Qual padrão usar?",
+   "o": [
+    "Diferença de tamanho",
+    "Combinação dos termos que mais se repetem",
+    "Poderá e deverá",
+    "Eliminação de absurdas"
+   ],
+   "c": 1,
+   "e": "Conte por posição e junte os mais repetidos.",
+   "tag": "Quadro"
+  },
+  {
+   "id": "d5",
+   "t": "mc",
+   "p": "Quatro alternativas têm duas linhas; uma tem seis linhas cheias de detalhes. Qual padrão?",
+   "o": [
+    "Diferença de tamanho",
+    "Termos negativos",
+    "Contexto",
+    "Teste de alternativas"
+   ],
+   "c": 0,
+   "e": "A alternativa fora do tamanho padrão chama atenção.",
+   "tag": "Quadro"
+  },
+  {
+   "id": "d6",
+   "t": "mc",
+   "p": "“A tarifa não pode ser alterada unilateralmente.” Que padrão aparece?",
+   "o": [
+    "Palavra excludente",
+    "Termo negativo (e “pode”)",
+    "Semelhança",
+    "Estrutura"
+   ],
+   "c": 1,
+   "e": "O “não” é o termo negativo clássico, e o “pode” também acende a luz.",
+   "tag": "Quadro"
+  },
+  {
+   "id": "d7",
+   "t": "mc",
+   "p": "Você não sabe montar a equação, mas pode substituir os valores das alternativas no problema. Qual padrão usar?",
+   "o": [
+    "Teste de alternativas",
+    "Estranheza",
+    "Excludentes",
+    "Contexto"
+   ],
+   "c": 0,
+   "e": "Teste começando pelo valor intermediário.",
+   "tag": "Quadro"
+  },
+  {
+   "id": "d8",
+   "t": "mc",
+   "p": "Três alternativas dizem “deverá obrigatoriamente” e uma é aberta, sem restrição. O comando pede a correta. Qual padrão usar?",
+   "o": [
+    "Texto mais genérico e menos restritivo",
+    "Diferença de tamanho",
+    "Termos que mais se repetem",
+    "Semelhança"
+   ],
+   "c": 0,
+   "e": "Quando se pede a correta, a menos restritiva tende a ser a resposta.",
+   "tag": "Quadro"
+  }
+ ],
+ "rotina": [
+  {
+   "t": "Prepare",
+   "d": "Deixe o quadro de padrões ao lado, papel e caneta. Leia o objetivo da aula aqui no guia."
+  },
+  {
+   "t": "Assista e pause",
+   "d": "Quando o professor pedir, pause o vídeo e tente marcar a resposta antes de ver a resolução."
+  },
+  {
+   "t": "Pratique",
+   "d": "Responda os exercícios da aula neste guia. Cada resposta mostra a correção na hora."
+  },
+  {
+   "t": "Revise",
+   "d": "Anote no seu quadro o padrão e um exemplo. Marque a aula como concluída e avance."
+  }
+ ],
+ "glossario": [
+  {
+   "t": "Modelagem de questões",
+   "d": "Técnica de identificar a alternativa que apresenta padrões que a diferenciam das demais. Serve para as questões em que você não sabe a matéria ou está sem tempo."
+  },
+  {
+   "t": "Padrão",
+   "d": "Marca deixada pelo examinador ao construir a alternativa: uma palavra, um tamanho, uma estrutura ou um contexto diferente."
+  },
+  {
+   "t": "Quadro de padrões",
+   "d": "Tabela de duas colunas (padrão | exemplo) que você desenha no espaço em branco da prova para lembrar os padrões."
+  },
+  {
+   "t": "Comando da questão",
+   "d": "O que a questão pede: correta, incorreta, exceto, julgue. Grife sempre antes de modelar."
+  },
+  {
+   "t": "Assertiva",
+   "d": "Afirmação que você julga como Certa ou Errada nas provas do tipo Cebraspe."
+  },
+  {
+   "t": "Certo e Errado",
+   "d": "Formato em que acertar soma ponto, errar desconta e deixar em branco vale zero."
+  },
+  {
+   "t": "Balanceamento entre alternativas",
+   "d": "Distribuição aproximada das respostas entre A, B, C, D e E (ou entre C e E) em uma prova."
+  },
+  {
+   "t": "Técnica do chute",
+   "d": "Quando o tempo acaba, marcar uma única letra — a que você menos usou no gabarito — em todas as questões restantes."
+  },
+  {
+   "t": "Modelagem reversa",
+   "d": "Começar pela banca e pelas questões, voltar ao material de base e criar um modelo mental de como o conteúdo é cobrado."
+  },
+  {
+   "t": "Material de base",
+   "d": "Leis, manuais, doutrinas e apostilas que sustentam o conteúdo cobrado."
+  },
+  {
+   "t": "M.A.P.A.",
+   "d": "Modelagem da banca, Análise reversa, identificação de Padrões e Aplicação prática."
+  },
+  {
+   "t": "Meta-aprendizagem",
+   "d": "Aprender a aprender: conhecer as estratégias que melhoram o aprendizado e escolher a certa para cada situação."
+  }
+ ],
+ "materiais": {
+  "bonus": {
+   "ativo": true,
+   "eyebrow": "Bônus do curso",
+   "titulo": "Ebook Marque o X no lugar certo",
+   "texto": "A Tríade do Sucesso organiza a sua preparação; a modelagem ganha as questões que faltam. O ebook traz os três pilares, os ciclos de revisão, os simulados S1M/S2M e o método de memorização C.A.R.P.A.",
+   "botao": "Abrir o roteiro do ebook",
+   "link": "#ebook",
+   "pilares": [
+    {
+     "t": "Foco",
+     "d": "Mentalidade de campeão e ambiente de estudo."
+    },
+    {
+     "t": "Parâmetro",
+     "d": "Edital, cronograma, simulados e revisões."
+    },
+    {
+     "t": "Método",
+     "d": "Estudo ativo, ferramentas e C.A.R.P.A."
+    }
+   ]
+  },
+  "itens": [
+   {
+    "titulo": "Ebook · Tríade do Sucesso",
+    "desc": "Foco, parâmetro, método, modelagem e memorização. Módulo 05 · Bônus.",
+    "tipo": "PDF",
+    "link": "#ebook"
+   },
+   {
+    "titulo": "Coletânea de provas diversas",
+    "desc": "Provas para treinar a modelagem, o balanceamento e o M.A.P.A.",
+    "tipo": "PDF",
+    "link": "#coletanea"
+   },
+   {
+    "titulo": "Quadro de padrões",
+    "desc": "Os padrões com sinal, ação e exemplo, mais um treino relâmpago.",
+    "tipo": "WEB",
+    "link": "#quadro"
+   },
+   {
+    "titulo": "Análise de balanceamento",
+    "desc": "Passo a passo para contar as letras do gabarito da sua banca.",
+    "tipo": "AULA",
+    "link": "#bal2"
+   }
+  ],
+  "rotinaEstudo": [
+   {
+    "t": "Semana 1 · Fundamentos e primeiros padrões.",
+    "d": "Introdução e aulas 01 a 08 do módulo 02. Monte o seu quadro de padrões."
+   },
+   {
+    "t": "Semana 2 · Demais padrões.",
+    "d": "Aulas 09 a 19. Faça o treino relâmpago do quadro ao final."
+   },
+   {
+    "t": "Semana 3 · Certo e Errado e aulas especiais.",
+    "d": "Assista às aulas da banca que você vai prestar com atenção extra."
+   },
+   {
+    "t": "Semana 4 · Balanceamento e modelagem reversa.",
+    "d": "Conte o gabarito de 2 provas da sua banca e aplique o M.A.P.A."
+   },
+   {
+    "t": "Sempre · Prática.",
+    "d": "Uma prova da coletânea por semana e o simulado misto deste guia."
+   }
+  ]
+ }
+}

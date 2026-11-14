@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Painel admin · Guia do Aluno</title>
+<style>
+:root{--ink:#0f1424;--ink2:#171e34;--ink3:#222b47;--acc:#f4b324;--acc-soft:#fff4d6;--acc-ink:#7a5200;--bg:#f4f5f8;--card:#fff;--line:#e3e6ee;--text:#151a2b;--muted:#6a7185;--ok:#13875a;--ok-soft:#e3f5ec;--bad:#c93a2b;--bad-soft:#fdeceA;--r:14px}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg);font-size:14.5px;line-height:1.5}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:inherit}
+.layout{display:grid;grid-template-columns:236px 1fr;min-height:100vh}
+.side{background:var(--ink);color:#cfd5e6;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;padding:18px 12px;overflow:auto}
+.logo{display:flex;align-items:center;gap:10px;padding:4px 8px 18px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:12px}
+.logo b{display:block;color:#fff;font-size:15px}
+.logo small{color:#8d95ad;font-size:12px}
+.tab{display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:0;background:transparent;color:#cfd5e6;padding:9px 12px;border-radius:10px;font-weight:600;font-size:14px}
+.tab:hover{background:rgba(255,255,255,.05)}
+.tab.on{background:var(--ink3);color:#fff}
+.tab .n{margin-left:auto;font-size:11px;background:rgba(255,255,255,.08);border-radius:999px;padding:1px 8px;color:#aab2c8}
+.tabsec{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#6c7593;font-weight:800;margin:16px 12px 6px}
+.side-foot{margin-top:auto;padding:12px 8px 0;font-size:12px;color:#7d86a3}
+.side-foot a{color:var(--acc)}
+.main{min-width:0;display:flex;flex-direction:column}
+.top{position:sticky;top:0;z-index:20;background:rgba(244,245,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;padding:10px 22px}
+.top h1{font-size:17px;margin:0;font-weight:800}
+.status{font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:#eceef4;color:var(--muted)}
+.status.dirty{background:var(--acc-soft);color:var(--acc-ink)}
+.status.ok{background:var(--ok-soft);color:var(--ok)}
+.top .sp{flex:1}
+.btn{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 13px;font-weight:700;font-size:13.5px;text-decoration:none;white-space:nowrap}
+.btn:hover{border-color:#c9cedb}
+.btn.pri{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.pri:hover{background:var(--ink3)}
+.btn.acc{background:var(--acc);border-color:var(--acc);color:#1a1300}
+.btn.danger{color:var(--bad)}
+.btn.sm{padding:5px 9px;font-size:12.5px;border-radius:8px}
+.btn.ic{padding:5px 7px}
+.btn[disabled]{opacity:.45;cursor:default}
+.work{display:grid;grid-template-columns:1fr;flex:1;min-height:0}
+.work.split{grid-template-columns:minmax(480px,1fr) minmax(380px,46%)}
+.editor{padding:22px 26px 80px;min-width:0}
+.prev{border-left:1px solid var(--line);background:#e9ebf1;position:sticky;top:57px;height:calc(100vh - 57px);display:none;flex-direction:column}
+.work.split .prev{display:flex}
+.prev-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:1px solid var(--line);background:#fff;font-size:12.5px;font-weight:700;color:var(--muted)}
+.prev iframe{flex:1;border:0;width:100%;background:#fff}
+.pagett{font-size:24px;font-weight:800;margin:0 0 4px}
+.pagesub{color:var(--muted);margin:0 0 20px;max-width:760px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin-bottom:14px}
+.card h3{margin:0 0 12px;font-size:15.5px;font-weight:800;display:flex;align-items:center;gap:8px}
+.card h3 .sp{flex:1}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px;min-width:0}
+.field>span{font-size:12.5px;font-weight:700;color:#3d4459}
+.field>small{font-size:12px;color:var(--muted)}
+.field input[type=text],.field input[type=url],.field input[type=password],.field input[type=number],.field select,.field textarea{width:100%;border:1px solid #d6dae5;border-radius:9px;padding:8px 10px;background:#fff;outline:0}
+.field textarea{resize:vertical;min-height:62px}
+.card>textarea,.card textarea{width:100%;border:1px solid #d6dae5;border-radius:9px;padding:8px 10px;background:#fff;outline:0;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--acc);box-shadow:0 0 0 3px rgba(244,179,36,.18)}
+.colorrow{display:flex;align-items:center;gap:8px}
+.colorrow input[type=color]{width:42px;height:36px;border:1px solid #d6dae5;border-radius:9px;padding:2px;background:#fff}
+.colorrow input[type=text]{flex:1}
+.check{display:flex;align-items:center;gap:9px;font-weight:600;margin:6px 0 10px;cursor:pointer}
+.check input{width:18px;height:18px;accent-color:var(--ink)}
+.item{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:#fbfbfd}
+.item-head{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.item-head b{font-size:13px;color:var(--muted);flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lessons{display:grid;grid-template-columns:270px minmax(0,1fr);gap:16px;align-items:start}
+.lessons>*{min-width:0}
+.work.split .lessons{grid-template-columns:220px minmax(0,1fr)}
+.work.split .grid3{grid-template-columns:1fr 1fr}
+.llist{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:8px;position:sticky;top:72px;max-height:calc(100vh - 90px);overflow:auto}
+.lmod{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--muted);padding:10px 8px 4px;display:flex;align-items:center;gap:6px}
+.lrow{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:9px;cursor:pointer;font-size:13.5px}
+.lrow:hover{background:#f3f4f8}
+.lrow.on{background:var(--acc-soft)}
+.lrow .sg{font-size:11px;font-weight:800;background:#eceef4;border-radius:6px;padding:1px 6px;color:#555d74;flex:none;min-width:30px;text-align:center}
+.lrow span:last-child{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.q{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px;background:#fbfbfd}
+.opt{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.opt input[type=radio]{width:18px;height:18px;accent-color:var(--ok);flex:none}
+.opt input[type=text]{flex:1;border:1px solid #d6dae5;border-radius:8px;padding:7px 9px}
+.opt.right input[type=text]{border-color:var(--ok);background:var(--ok-soft)}
+.hint{font-size:12.5px;color:var(--muted)}
+.note{background:var(--acc-soft);border:1px solid #f1dfab;border-radius:12px;padding:12px 14px;color:#5b4300;font-size:13.5px;margin-bottom:14px}
+.note.ok{background:var(--ok-soft);border-color:#bfe6d1;color:#0d5c3c}
+.note.bad{background:var(--bad-soft);border-color:#f2c3bd;color:#7c2015}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px 16px}
+.stat b{font-size:26px;display:block}
+.stat small{color:var(--muted)}
+.steps{margin:0;padding-left:20px}
+.steps li{margin:7px 0}
+.presets{display:flex;gap:8px;flex-wrap:wrap}
+.preset{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:6px 10px;font-weight:700;font-size:13px}
+.preset i{width:16px;height:16px;border-radius:50%;display:inline-block}
+.logo-prev{display:flex;align-items:center;gap:12px}
+.logo-prev img{max-height:48px;max-width:160px;border-radius:8px;background:#0f1424;padding:4px}
+.capa-prev{width:160px;aspect-ratio:16/9;border-radius:10px;background:#e3e6ee center/cover;border:1px solid var(--line)}
+.banner{background:#fff;border:1px solid #f1dfab;border-left:4px solid var(--acc);border-radius:12px;padding:12px 16px;margin:14px 26px 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.modal-bg{position:fixed;inset:0;background:rgba(10,14,28,.5);z-index:100;display:grid;place-items:center;padding:20px}
+.modal{background:#fff;border-radius:16px;padding:22px;max-width:480px;width:100%;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+.modal h3{margin:0 0 8px}
+.modal p{color:var(--muted);margin:0 0 16px}
+.modal .acts{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-weight:700;font-size:13.5px;z-index:120;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.empty{color:var(--muted);text-align:center;padding:30px}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th{text-align:left;font-size:12px;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl td{padding:9px 10px;border-bottom:1px solid #f0f1f5;vertical-align:top}
+.card h3 input{border:1px solid #d6dae5;border-radius:8px;padding:5px 9px;font-weight:500;font-size:13px}
+.linkrow{display:flex;align-items:center;gap:8px;padding:9px 4px;border-top:1px solid #f0f1f5}
+.lr-t{flex:1;min-width:0;font-size:13.5px}
+.lr-t small{display:block;color:var(--muted);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:ui-monospace,Menlo,monospace}
+.patgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2px 14px}
+.gopt{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fbfbfd}
+.gopt>b{display:block;margin-bottom:4px}
+.gen{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:12px}
+.gen.off{opacity:.55}
+.gen .q{margin:6px 0 0;border:0;padding:0;background:transparent}
+.gen-bar{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin-bottom:4px}
+.gen-bar .field{margin:0;min-width:200px}
+code{background:#eef0f5;border-radius:5px;padding:1px 5px;font-size:12.5px}
+@media (max-width:1100px){.work.split{grid-template-columns:1fr}.prev{display:none!important}.lessons{grid-template-columns:1fr}.llist{position:static;max-height:none}}
+@media (max-width:760px){.layout{grid-template-columns:1fr}.side{position:static;height:auto;flex-direction:row;flex-wrap:wrap;gap:4px}.logo,.tabsec,.side-foot{display:none}.tab{width:auto}.grid2,.grid3,.stats{grid-template-columns:1fr}.editor{padding:16px}.top{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="layout">
+  <aside class="side">
+    <div class="logo"><svg width="34" height="34" viewBox="0 0 40 40"><rect x="2" y="2" width="36" height="36" rx="9" fill="#f4b324"/><path d="M12 28V14l8 8 8-8v14" stroke="#0f1424" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Painel admin</b><small>Guia do aluno</small></div></div>
+    <nav id="tabs"></nav>
+    <div class="side-foot">Edite, pré-visualize e clique em <b>Publicar</b>. Tudo que você muda fica salvo como rascunho neste navegador até publicar.<br><br><a href="index.html" target="_blank" rel="noopener">Abrir o site do aluno ↗</a></div>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <h1 id="ttl">Visão geral</h1>
+      <span class="status" id="status">Carregando…</span>
+      <span class="sp"></span>
+      <button class="btn" id="btnPrev" title="Mostrar a prévia ao lado">◧ Prévia ao vivo</button>
+      <button class="btn" id="btnTab" title="Abrir o rascunho em uma nova aba">↗ Ver em nova aba</button>
+      <button class="btn acc" id="btnPub">⇪ Publicar</button>
+    </header>
+    <div id="bannerSlot"></div>
+    <div class="work" id="work">
+      <section class="editor" id="ed"></section>
+      <aside class="prev"><div class="prev-bar">Prévia ao vivo · o que o aluno verá <span style="flex:1"></span><button class="btn sm" id="prevReload">Recarregar</button></div><iframe id="frame" title="Prévia"></iframe></aside>
+    </div>
+  </div>
+</div>
+<script src="tema.js"></script>
+<script src="nuvem.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
