@@ -45,22 +45,24 @@
    "titulo": "Entre com o seu código de acesso",
    "texto": "Você recebeu o código de acesso junto com a compra do curso, na área de membros. Digite uma vez: neste aparelho ele fica salvo.",
    "linkAjuda": "",
-   "modo": "aberto",
    "tituloLogin": "Entre com o e-mail da compra",
    "textoLogin": "Seu progresso fica salvo na sua conta e acompanha você em qualquer aparelho.",
-   "linkMembros": ""
+   "modo": "login",
+   "linkMembros": "https://membros.marqueoxnolugarcerto.com.br/"
   },
   "rodape": "Seu progresso fica salvo neste navegador.",
   "nuvem": {
-   "apiKey": "",
-   "authDomain": "",
-   "projectId": "",
-   "appId": "",
+   "apiKey": "AIzaSyCseY2elmLAKMvHMVEHbZ6W7sXuEpEb3Cw",
+   "authDomain": "guia-modelagem.firebaseapp.com",
+   "projectId": "guia-modelagem",
+   "appId": "1:794557635476:web:f5b477356eea61965b8d81",
    "listaCompradores": false,
    "google": true,
-   "admins": [],
-   "entrada": "convite",
-   "conviteHash": ""
+   "admins": [
+    "re9treinamentos@gmail.com"
+   ],
+   "conviteHash": "e18847405e33330e86fdf41d85eed9d4522e02c91a585d7bda1472770593fa86",
+   "entrada": "convite"
   }
  },
  "modulos": [
