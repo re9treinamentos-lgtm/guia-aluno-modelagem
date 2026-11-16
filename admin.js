@@ -461,8 +461,13 @@ function scriptCode(proj, chave){ return `// Guia do Aluno · liberação autom�
 // Cole este código no Google Apps Script (mesma conta Google do Firebase).
 const PROJETO = "${proj}";
 const CHAVE = "${chave}";
-// Cole aqui a chave da API da Memberkit (só é usada para cadastrar o webhook):
+// Cole aqui a chave da API da Memberkit (Configurações → API, no painel da Memberkit).
+// Ela permite liberar sozinho quem JÁ é aluno, no primeiro login no guia.
 const MEMBERKIT_API_KEY = "COLE_AQUI_A_CHAVE_DA_API_DA_MEMBERKIT";
+// Opcional: restringir a cursos/planos. Vazio = qualquer matrícula ou assinatura ativa libera.
+// Ex.: const TURMAS = [12345];  (IDs das turmas)   const PLANOS = [678];  (IDs dos planos de assinatura)
+const TURMAS = [];
+const PLANOS = [];
 
 const BLOQUEIA = ["inactive", "expired", "canceled", "cancelled", "refunded", "suspended", "blocked"];
 
@@ -496,7 +501,42 @@ function doPost(e) {
   return resposta({ ok: true, liberado: email });
 }
 
-function doGet() { return resposta({ ok: true, info: "Webhook do Guia do Aluno ativo." }); }
+// Consulta feita pelo guia quando o aluno entra e ainda não está na lista:
+// pergunta à Memberkit se o e-mail tem matrícula ou assinatura ativa e, se tiver, libera.
+function doGet(e) {
+  const email = String((e && e.parameter && e.parameter.verificar) || "").trim().toLowerCase();
+  if (!email) return resposta({ ok: true, info: "Webhook do Guia do Aluno ativo." });
+  if (!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(email)) return resposta({ ok: false, erro: "e-mail inválido" });
+  if (MEMBERKIT_API_KEY.indexOf("COLE_AQUI") === 0) return resposta({ ok: false, erro: "chave da API da Memberkit não configurada" });
+  const r = UrlFetchApp.fetch("https://memberkit.com.br/api/v1/users/" + encodeURIComponent(email) +
+    "?api_key=" + encodeURIComponent(MEMBERKIT_API_KEY), { muteHttpExceptions: true });
+  if (r.getResponseCode() !== 200) return resposta({ ok: true, liberado: false, memberkit: r.getResponseCode() });
+  let u = {};
+  try { u = JSON.parse(r.getContentText()); } catch (x) {}
+  if (u.blocked) return resposta({ ok: true, liberado: false });
+  const ativo = x => String(x.status || "").toLowerCase() === "active";
+  const turmas = (u.enrollments || []).filter(x => ativo(x) && (!TURMAS.length || TURMAS.indexOf(Number(x.classroom_id)) >= 0));
+  const planos = (u.memberships || []).filter(x => ativo(x) && (!PLANOS.length || PLANOS.indexOf(Number(x.membership_level_id)) >= 0));
+  if (!turmas.length && !planos.length) return resposta({ ok: true, liberado: false });
+  UrlFetchApp.fetch("https://firestore.googleapis.com/v1/projects/" + PROJETO +
+    "/databases/(default)/documents/alunos/" + encodeURIComponent(email), {
+    method: "patch", contentType: "application/json", muteHttpExceptions: true,
+    headers: { Authorization: "Bearer " + ScriptApp.getOAuthToken() },
+    payload: JSON.stringify({ fields: {
+      origem: { stringValue: "memberkit (consulta no login)" },
+      evento: { stringValue: "consulta / active" },
+      turma: { stringValue: turmas.map(x => x.classroom_id).concat(planos.map(x => "plano " + x.membership_level_id)).join(", ") },
+      nome: { stringValue: String(u.full_name || "") },
+      adicionado: { timestampValue: new Date().toISOString() }
+    } }) });
+  return resposta({ ok: true, liberado: true });
+}
+
+// Teste: troque o e-mail abaixo pelo de um aluno e rode esta função (botão Executar).
+function testarConsulta() {
+  const r = doGet({ parameter: { verificar: "email-de-um-aluno@exemplo.com" } });
+  Logger.log(r.getContent());
+}
 
 function resposta(o) {
   return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON);
@@ -548,7 +588,9 @@ function hotmartCard(){
         h("li",null,"Clique em ", h("b",null,"Implantar → Nova implantação"), " → tipo ", h("b",null,"App da Web"), ". Executar como: ", h("b",null,"Eu"), ". Quem pode acessar: ", h("b",null,"Qualquer pessoa"), ". Clique em ", h("b",null,"Implantar"), "."),
         h("li",null,"Escolha a função ", h("b",null,"cadastrarWebhookMemberkit"), " e clique em ", h("b",null,"Executar"), ". No registro deve aparecer ", h("code",null,"201 = cadastrado"), ". Pronto: a Memberkit passa a avisar o guia sozinha."),
         h("li",null, (()=>{ const cb=h("input",{type:"checkbox",onchange:e=>{ const c=hotCfg(); c.feito=e.target.checked; hotSave(c); }}); cb.checked=!!hc.feito; return h("label",{class:"check",style:"margin:0"}, cb, "Concluí a configuração"); })()))),
-    h("div",{class:"note"},"Quem já é aluno hoje: exporte a lista de alunos na Memberkit e cole uma única vez na aba ", h("b",null,"Alunos e progresso → Lista de compradores"), " (o painel encontra os e-mails sozinho). Daqui para frente, é automático."),
+    (()=>{ const inp = h("input",{type:"url",placeholder:"https://script.google.com/macros/s/…/exec",oninput:e=>{ N.verificarUrl = e.target.value.trim().replace(/\?.*$/,""); changed(); }}); inp.value = N.verificarUrl || "";
+      return field("URL do app da Web (Apps Script)", inp, "Cole o URL que termina em /exec, sem o ?chave. Com ele (e a chave da API da Memberkit no código), quem já é aluno é liberado sozinho no primeiro login: o guia pergunta à Memberkit. Não é preciso importar lista."); })(),
+    h("div",{class:"note"},"Alternativa sem a chave da API: exporte a lista de alunos na Memberkit e cole uma única vez em ", h("b",null,"Alunos e progresso → Lista de compradores"), "."),
     h("p",{class:"hint"},"A chave secreta do webhook fica dentro do código do Apps Script. Não compartilhe esse código."));
 }
 

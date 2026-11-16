@@ -604,6 +604,14 @@ async function afterLogin(u){
     if (isPwd && !u.emailVerified){ verifyView(u); return; }
     let ok = false;
     try { ok = await MQNuvem.liberado(u.email); } catch(e){ gateShell(`<h1>Não foi possível verificar seu acesso</h1><p>${esc(MQNuvem.erro(e))}</p><button class="btn btn-gold" onclick="location.reload()">Tentar de novo</button>`); return; }
+    if (!ok && N.verificarUrl){
+      gateShell(`<h1>Verificando sua compra…</h1><p>Um instante: estamos confirmando seu acesso na área de membros.</p>`);
+      try {
+        const r = await fetch(N.verificarUrl + (N.verificarUrl.indexOf("?")>=0?"&":"?") + "verificar=" + encodeURIComponent((u.email||"").toLowerCase()));
+        const j = await r.json();
+        if (j && j.liberado){ try { ok = await MQNuvem.liberado(u.email); } catch(e){ ok = true; } }
+      } catch(e){}
+    }
     if (!ok){ blockedView(u); return; }
   }
   let remote0 = null;
